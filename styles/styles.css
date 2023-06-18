@@ -52,9 +52,19 @@ h3 {font-size: 24px;
 
 .hotels form h2 {text-align: left;}
 
-.about .blocks div:first-child, .about .blocks div:last-child {color: #ffffff;}
+.about .blocks div:first-child, .about .blocks div:last-child {background-color: #82b3d3;}
 
-.mail {color: #ffffff;}
+.about .blocks div:nth-child(3), .about .blocks div:nth-child(5) {background-color: #f0f6fa;}
+
+.about .blocks div:nth-child(4) {background-color: #e6f0f6;}
+
+.about .blocks div:first-child h3, .about .blocks div:last-child h3, .about .blocks div:first-child p, .about .blocks div:last-child p {color: #ffffff;}
+
+.comfort .blocks div:first-child, .comfort .blocks div:last-child {background-color: #e6f0f6;}
+
+.mail h2, .mail p {color: #ffffff;}
+
+.mail {background-image: url("images/footer/sreenivas-NayExohOnjU-unsplash.jpg")}
 
 footer span a {font-size: 40px;
   line-height: 40px;
@@ -71,11 +81,23 @@ footer span a {font-size: 40px;
   line-height: 20px;}
 
 .hotels .catalog .card .features .rating {font-weight: 400;
-  color: #333333;}
+  color: #333333;
+  background-color: #f2f2f2;}
+
+.hotels .catalog .card .features .favourite-button {background-color: #82b3d3;}
+
+.hotels .catalog .card .features .favourite-button.favourite {background-color: #7db54f;}
 
 .list li {font-size: 20px;
   line-height: 36px;
   font-weight: 700;
-  color: #ffffff;}
+  color: #ffffff;
+  background-color: #82b3d3;}
 
-.list li.active {color: #000000;}
+.list li.active-item {color: #000000;
+  background-color: #f2f2f2}
+
+.banner {background-image: url("images/header/index-background.jpg");
+  background-repeat: no-repeat;
+  background-position: left top;
+  background-attachment: fixed;}
