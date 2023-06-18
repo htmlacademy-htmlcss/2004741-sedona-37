@@ -1,0 +1,103 @@
+@font-face {font-family: "PT Sans";
+  src: url("fonts/ptsans-400.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;}
+
+@font-face {font-family: "PT Sans";
+  src: url("fonts/ptsans-700.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;}
+
+body {font-family: "PT Sans", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+  color: #333333;}
+
+.menu-link {font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #000000;}
+
+.interest-button {color: #ffffff;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 20px;
+  background-color: #756157;}
+
+.interest .interest-button {font-size: 20px;
+  line-height: 36px;}
+
+h2 {font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;}
+
+.post-header {font-size: 22px;
+  line-height: 26px;
+  text-align: center;}
+
+h3 {font-size: 24px;
+  line-height: 28px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #000000;}
+
+.form a {color: #ffffff;
+  font-size: 16px;}
+
+.hotels .catalog .card h3 {text-transform: none;}
+
+.hotels form h2 {text-align: left;}
+
+.about .blocks div:first-child, .about .blocks div:last-child {background-color: #82b3d3;}
+
+.about .blocks div:nth-child(3), .about .blocks div:nth-child(5) {background-color: #f0f6fa;}
+
+.about .blocks div:nth-child(4) {background-color: #e6f0f6;}
+
+.about .blocks div:first-child h3, .about .blocks div:last-child h3, .about .blocks div:first-child p, .about .blocks div:last-child p {color: #ffffff;}
+
+.comfort .blocks div:first-child, .comfort .blocks div:last-child {background-color: #e6f0f6;}
+
+.mail h2, .mail p {color: #ffffff;}
+
+.mail {background-image: url("images/footer/sreenivas-NayExohOnjU-unsplash.jpg")}
+
+footer span a {font-size: 40px;
+  line-height: 40px;
+  color: #000000;}
+
+.h1 {color: #ffffff;
+  font-size: 60px;
+  line-height: 78px;}
+
+.hotels .catalog .card .features a, .hotels .catalog .card .features span {text-transform: uppercase;
+  font-weight: 700;
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 20px;}
+
+.hotels .catalog .card .features .rating {font-weight: 400;
+  color: #333333;
+  background-color: #f2f2f2;}
+
+.hotels .catalog .card .features .favourite-button {background-color: #82b3d3;}
+
+.hotels .catalog .card .features .favourite-button.favourite {background-color: #7db54f;}
+
+.list li {font-size: 20px;
+  line-height: 36px;
+  font-weight: 700;
+  color: #ffffff;
+  background-color: #82b3d3;}
+
+.list li.active-item {color: #000000;
+  background-color: #f2f2f2}
+
+.banner {background-image: url("images/header/index-background.jpg");
+  background-repeat: no-repeat;
+  background-position: left top;
+  background-attachment: fixed;}
