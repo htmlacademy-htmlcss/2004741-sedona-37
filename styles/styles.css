@@ -1,0 +1,81 @@
+@font-face {font-family: "PT Sans";
+  src: url("fonts/ptsans-400.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;}
+
+@font-face {font-family: "PT Sans";
+  src: url("fonts/ptsans-700.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;}
+
+body {font-family: "PT Sans", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+  color: #333333;}
+
+.menu-link {font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #000000;}
+
+.interest-button {color: #ffffff;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 20px;
+  background-color: #756157;}
+
+.interest .interest-button {font-size: 20px;
+  line-height: 36px;}
+
+h2 {font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;}
+
+.post-header {font-size: 22px;
+  line-height: 26px;
+  text-align: center;}
+
+h3 {font-size: 24px;
+  line-height: 28px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #000000;}
+
+.form a {color: #ffffff;
+  font-size: 16px;}
+
+.hotels .catalog .card h3 {text-transform: none;}
+
+.hotels form h2 {text-align: left;}
+
+.about .blocks div:first-child, .about .blocks div:last-child {color: #ffffff;}
+
+.mail {color: #ffffff;}
+
+footer span a {font-size: 40px;
+  line-height: 40px;
+  color: #000000;}
+
+.h1 {color: #ffffff;
+  font-size: 60px;
+  line-height: 78px;}
+
+.hotels .catalog .card .features a, .hotels .catalog .card .features span {text-transform: uppercase;
+  font-weight: 700;
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 20px;}
+
+.hotels .catalog .card .features .rating {font-weight: 400;
+  color: #333333;}
+
+.list li {font-size: 20px;
+  line-height: 36px;
+  font-weight: 700;
+  color: #ffffff;}
+
+.list li.active {color: #000000;}
