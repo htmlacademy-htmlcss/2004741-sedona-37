@@ -278,3 +278,30 @@ footer div {
 footer div a:not(:last-child) {
   margin-right: 27px;
 }
+
+.hotels {
+  padding: 50px 70px 60px 70px;
+}
+
+.hotels form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hotels h2 {
+  margin: 0;
+}
+
+.form {
+  background-color: black;
+}
+
+.hotels {
+  display: flex;
+  flex-direction: column;
+}
+
+.hotels > div:not(:last-child) {
+  margin-bottom: 40px;
+}
