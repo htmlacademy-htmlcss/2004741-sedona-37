@@ -440,7 +440,9 @@ footer span a {
   line-height: 26px;
   font-weight: 400;
   color: #000000;
+  text-align: center;
   background-color: inherit;
+  width: 60px;
   padding-top: 16px;
   padding-bottom: 17px;
 }
