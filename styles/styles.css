@@ -1,103 +1,319 @@
-@font-face {font-family: "PT Sans";
-  src: url("fonts/ptsans-400.woff2") format("woff2");
+/* Шрифты */
+
+@font-face {
+  font-family: "PT Sans";
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
   font-weight: 400;
-  font-style: normal;}
+  font-style: normal;
+  font-display: swap;
+}
 
-@font-face {font-family: "PT Sans";
-  src: url("fonts/ptsans-700.woff2") format("woff2");
+@font-face {
+  font-family: "PT Sans";
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
   font-weight: 700;
-  font-style: normal;}
+  font-style: normal;
+  font-display: swap;
+}
 
-body {font-family: "PT Sans", Arial, sans-serif;
+/* Общие стили */
+
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+body {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  width: 1200px;
+  min-height: 100%;
+  font-family: "PT Sans", Arial, sans-serif;
   font-size: 18px;
   line-height: 21px;
-  color: #333333;}
+  color: #333333;
+  margin: 0 auto;
+  padding: 0;
+  outline: solid orange;
+}
 
-.menu-link {font-size: 20px;
+.menu-link {
+  font-size: 20px;
   line-height: 24px;
   font-weight: 700;
-  color: #000000;}
+  color: #000000;
+}
 
-.interest-button {color: #ffffff;
+.interest-button {
+  color: #ffffff;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 16px;
   line-height: 20px;
-  background-color: #756157;}
+  background-color: #756157;
+}
 
-.interest .interest-button {font-size: 20px;
-  line-height: 36px;}
-
-h2 {font-size: 30px;
+h2 {
+  font-size: 30px;
   line-height: 36px;
   font-weight: 700;
   text-align: center;
   text-transform: uppercase;
-  color: #000000;}
+  color: #000000;
+}
 
-.post-header {font-size: 22px;
+.post-header {
+  font-size: 22px;
   line-height: 26px;
-  text-align: center;}
+  text-align: center;
+}
 
-h3 {font-size: 24px;
+h3 {
+  font-size: 24px;
   line-height: 28px;
   font-weight: 700;
   text-transform: uppercase;
-  color: #000000;}
+  color: #000000;
+}
 
-.form a {color: #ffffff;
-  font-size: 16px;}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 
-.hotels .catalog .card h3 {text-transform: none;}
+a {
+  text-decoration: none;
+}
 
-.hotels form h2 {text-align: left;}
+.interest, .mail, .catalog-mail {
+  padding: 70px 100px;
+}
 
-.about .blocks div:first-child, .about .blocks div:last-child {background-color: #82b3d3;}
+.about div.head-div, .comfort div.head-div {
+  padding: 45px 100px;
+}
 
-.about .blocks div:nth-child(3), .about .blocks div:nth-child(5) {background-color: #f0f6fa;}
+/* header */
 
-.about .blocks div:nth-child(4) {background-color: #e6f0f6;}
+header nav {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 70px;
+  align-items: center;
+}
 
-.about .blocks div:first-child h3, .about .blocks div:last-child h3, .about .blocks div:first-child p, .about .blocks div:last-child p {color: #ffffff;}
+header nav .nav-menu, header nav .nav-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 
-.comfort .blocks div:first-child, .comfort .blocks div:last-child {background-color: #e6f0f6;}
+header nav .nav-menu .menu-link {
+  padding: 20px 0;
+  margin: 0 16px;
+}
 
-.mail h2, .mail p {color: #ffffff;}
+.logo {
+  margin-right: 28px;
+}
 
-.mail {background-image: url("images/footer/sreenivas-NayExohOnjU-unsplash.jpg")}
+/* main */
 
-footer span a {font-size: 40px;
+main {
+  width: 1200px;
+  flex-grow: 1;
+}
+
+.banner {
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url("../images/header/index-background.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+}
+
+.welcome {
+  margin-top: 51px;
+  margin-bottom: 25px;
+}
+
+.decor {
+  width: 100%;
+}
+
+.about .blocks div:first-child, .about .blocks div:last-child {
+  background-color: #82b3d3;
+}
+
+.about .blocks div:nth-child(3), .about .blocks div:nth-child(5) {
+  background-color: #f0f6fa;
+}
+
+.about .blocks div:nth-child(4) {
+  background-color: #e6f0f6;
+}
+
+.about .blocks div:first-child h3,
+.about .blocks div:last-child h3,
+.about .blocks div:first-child p,
+.about .blocks div:last-child p {
+  color: #ffffff;
+}
+
+.comfort .blocks div:first-child, .comfort .blocks div:last-child {
+  background-color: #e6f0f6;
+}
+
+.comfort .blocks div:nth-child(1) {
+  background-image: url("../images/main/house.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto;
+}
+
+.comfort .blocks div:nth-child(2) {
+  background-image: url("../images/main/food.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto;
+}
+
+.comfort .blocks div:nth-child(3) {
+  background-image: url("../images/main/present.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto;
+}
+
+.interest .interest-button {
+  font-size: 20px;
+  line-height: 36px;
+}
+
+.mail {
+  background-image: url("");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.mail h2, .mail p {
+  color: #ffffff;
+}
+
+/* footer */
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 70px 30px 70px;
+  align-items: center;
+}
+
+footer div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer div a:not(:last-child) {
+  margin-right: 27px;
+}
+
+footer span a {
+  font-size: 40px;
   line-height: 40px;
-  color: #000000;}
+  color: #000000;
+}
 
-.h1 {color: #ffffff;
+/* catalog */
+
+.h1 {
+  color: #ffffff;
   font-size: 60px;
-  line-height: 78px;}
+  line-height: 78px;
+}
 
-.hotels .catalog .card .features a, .hotels .catalog .card .features span {text-transform: uppercase;
+.form {
+  background-color: black;
+}
+
+.form a {
+  color: #ffffff;
+  font-size: 16px;
+}
+
+.hotels {
+  display: flex;
+  flex-direction: column;
+  padding: 50px 70px 60px 70px;
+}
+
+.hotels > div:not(:last-child) {
+  margin-bottom: 40px;
+}
+
+.hotels form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hotels form h2 {
+  text-align: left;
+  margin: 0;
+}
+
+.hotels .catalog .card h3 {
+  text-transform: none;
+}
+
+.hotels .catalog .card .features a,
+.hotels .catalog .card .features span {
+  text-transform: uppercase;
   font-weight: 700;
   color: #ffffff;
   font-size: 16px;
-  line-height: 20px;}
+  line-height: 20px;
+}
 
-.hotels .catalog .card .features .rating {font-weight: 400;
+.hotels .catalog .card .features .favourite-button {
+  background-color: #82b3d3;
+}
+
+.hotels .catalog .card .features .favourite-button.favourite {
+  background-color: #7db54f;
+}
+
+.hotels .catalog .card .features .rating {
+  font-weight: 400;
   color: #333333;
-  background-color: #f2f2f2;}
+  background-color: #f2f2f2;
+}
 
-.hotels .catalog .card .features .favourite-button {background-color: #82b3d3;}
-
-.hotels .catalog .card .features .favourite-button.favourite {background-color: #7db54f;}
-
-.list li {font-size: 20px;
+.list li {
+  font-size: 20px;
   line-height: 36px;
   font-weight: 700;
   color: #ffffff;
-  background-color: #82b3d3;}
+  background-color: #82b3d3;
+}
 
-.list li.active-item {color: #000000;
-  background-color: #f2f2f2}
-
-.banner {background-image: url("images/header/index-background.jpg");
-  background-repeat: no-repeat;
-  background-position: left top;
-  background-attachment: fixed;}
+.list li.active-item {
+  color: #000000;
+  background-color: #f2f2f2;
+}
