@@ -116,7 +116,7 @@ header nav .nav-menu, header nav .nav-buttons {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  flex-wrap: wrap
+  flex-wrap: wrap;
 }
 
 .logo {
@@ -140,8 +140,17 @@ header nav .nav-menu .menu-link {
 /* main */
 
 main {
+  outline: solid aqua;
   width: 1200px;
   flex-grow: 1;
+}
+
+main > section {
+  outline: solid green;
+}
+
+.blocks div {
+  outline: solid yellow;
 }
 
 .banner {
@@ -291,19 +300,40 @@ footer span a {
 
 /* catalog */
 
-.h1 {
+.form {
+  background-image: url("../images/catalog/form.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 70px;
+  padding-top: 35px;
+  text-align: left;
+}
+
+.form .h1 {
   color: #ffffff;
   font-size: 60px;
   line-height: 78px;
+  margin: 0;
+  margin-bottom: 8px;
 }
 
-.form {
-  background-color: black;
+.form .form-navigation {
+  display: flex;
+  align-items: center;
 }
 
-.form a {
+.form .form-navigation .form-navigation-item {
+  margin-right: 10px;
+}
+
+.form .form-navigation a {
   color: #ffffff;
   font-size: 16px;
+}
+
+.form .form-navigation span {
+  color: #ffffff;
 }
 
 .hotels {
@@ -313,6 +343,7 @@ footer span a {
 }
 
 .hotels > div:not(:last-child) {
+  margin: 0;
   margin-bottom: 40px;
 }
 
@@ -325,6 +356,11 @@ footer span a {
 .hotels form h2 {
   text-align: left;
   margin: 0;
+}
+
+.hotels .catalog .card {
+  padding: 20px;
+  outline: solid violet;
 }
 
 .hotels .catalog .card h3 {
@@ -340,36 +376,76 @@ footer span a {
   line-height: 20px;
 }
 
+.hotels .catalog .card .features .interest-button {
+  padding: 8px 26px;
+}
+
 .hotels .catalog .card .features .favourite-button {
   background-color: #82b3d3;
+  padding: 8px 20px;
 }
 
 .hotels .catalog .card .features .favourite-button.favourite {
   background-color: #7db54f;
 }
 
+.hotels .catalog .card .features .stars img {
+  margin-right: 6px;
+}
+
 .hotels .catalog .card .features .rating {
   font-weight: 400;
   color: #333333;
   background-color: #f2f2f2;
+  padding: 9px 22px 8px 23px;
+}
+
+.hotels > div > img {
+  margin: 0;
 }
 
 .list {
-  flex-wrap: wrap
+  margin: 0;
+}
+
+.list ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+
+  flex-wrap: wrap;
 }
 
 .list li {
+  list-style-type: none;
+  margin: 0;
+  margin-right: 8px;
+}
+
+.list li a {
+  display: block;
   font-size: 20px;
   line-height: 36px;
   font-weight: 700;
   color: #ffffff;
+  text-align: center;
   background-color: #82b3d3;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
+  width: 60px;
+  padding-top: 11px;
+  padding-bottom: 12px;
 }
 
-.list li.active-item {
+.list li.ellipsis {
+  font-size: 22px;
+  line-height: 26px;
+  font-weight: 400;
+  color: #000000;
+  background-color: inherit;
+  padding-top: 16px;
+  padding-bottom: 17px;
+}
+
+.list li.active-item a {
   color: #000000;
   background-color: #f2f2f2;
 }
