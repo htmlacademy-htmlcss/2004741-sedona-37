@@ -47,6 +47,7 @@ body {
 }
 
 .interest-button {
+  display: block;
   color: #ffffff;
   font-weight: 700;
   text-transform: uppercase;
@@ -95,12 +96,16 @@ a {
   text-decoration: none;
 }
 
-.interest, .mail, .catalog-mail {
-  padding: 70px 240px;
+.mail, .catalog-mail {
+  padding: 70px 258px;
 }
 
 .about div.head-div, .comfort div.head-div {
-  padding: 45px 200px;
+  padding: 42px 200px;
+}
+
+.interest .post-header, .mail .post-header, .catalog-mail .post-header {
+  margin-bottom: 54px;
 }
 
 /* header */
@@ -174,19 +179,27 @@ main > section {
   width: 100%;
 }
 
+.about .blocks {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .about .blocks div:first-child, .about .blocks div:last-child {
   background-color: #82b3d3;
   padding: 102px 85px;
+  height: 181px;
 }
 
 .about .blocks div:nth-child(3), .about .blocks div:nth-child(5) {
   background-color: #f0f6fa;
   padding: 112px 85px;
+  height: 160px;
 }
 
 .about .blocks div:nth-child(4) {
   background-color: #e6f0f6;
   padding: 112px 85px;
+  height: 160px;
 }
 
 .about .blocks div:first-child h3,
@@ -200,9 +213,16 @@ main > section {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 230px;
+}
+
+.about .blocks div.image-element {
+  max-height: 385px;
 }
 
 .about .blocks h3 {
+  display: block;
+  width: 175px;
   margin: 0;
   margin-bottom: 30px;
 }
@@ -210,6 +230,10 @@ main > section {
 .about .blocks p {
   margin: 0
   margin-top: 30px;
+}
+
+.comfort .blocks {
+  display: flex;
 }
 
 .comfort .blocks div:first-child, .comfort .blocks div:last-child {
@@ -221,6 +245,7 @@ main > section {
   flex-direction: column;
   align-items: center;
   padding: 183px 85px 81px 85px;
+  width: 400px;
 }
 
 .comfort .blocks h3, .comfort .blocks p {
@@ -252,14 +277,17 @@ main > section {
   background-size: auto;
 }
 
-.interest .post-header, .mail .post-header, .catalog-mail .post-header {
-  margin-bottom: 54px;
+.interest {
+  padding: 96px 258px;
+  padding-top: 71px;
 }
 
 .interest a.interest-button {
   font-size: 20px;
   line-height: 36px;
-  padding: 8px 50px;
+  padding: 8px 0;
+  width: 376px;
+  margin: 0 auto;
 }
 
 .mail {
@@ -378,6 +406,7 @@ footer span a {
 
 .hotels .catalog .card .features .interest-button {
   padding: 8px 26px;
+  width: 88px;
 }
 
 .hotels .catalog .card .features .favourite-button {
