@@ -336,10 +336,10 @@ footer span a {
   padding: 70px;
   padding-top: 35px;
   text-align: left;
+  color: #ffffff;
 }
 
 .form .h1 {
-  color: #ffffff;
   font-size: 60px;
   line-height: 78px;
   margin: 0;
@@ -360,8 +360,16 @@ footer span a {
   font-size: 16px;
 }
 
-.form .form-navigation span {
-  color: #ffffff;
+.form form {
+  display: flex;
+  margin-top: 40px;
+}
+
+.form form fieldset {
+  border: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
 }
 
 .hotels {
