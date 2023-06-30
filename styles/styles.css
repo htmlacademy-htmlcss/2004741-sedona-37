@@ -108,19 +108,47 @@ body {
   margin-bottom: 54px;
 }
 
-/* header */
-
-.header .navigation {
+.email-form {
   display: flex;
-  justify-content: space-between;
-  margin: 0 70px;
-  align-items: center;
 }
 
-.header .nav-menu, .header .nav-buttons {
+.email-input {
+  padding: 14px 20px;
+  margin: 0;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  width: 452px;
+  box-sizing: border-box;
+}
+
+.email-button {
+  padding: 8px 50px;
+  margin: 0;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 20px;
+  line-height: 36px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #82b3d3;
+}
+
+/* header */
+
+.header {
+  padding: 0 70px;
+}
+
+.header .navigation {
+  padding: 0;
+  margin: 0;
   display: flex;
-  align-items: center;
   justify-content: space-between;
+}
+
+.navigation .nav-menu {
+  display: flex;
   flex-wrap: wrap;
 }
 
@@ -128,18 +156,42 @@ body {
   margin-right: 28px;
 }
 
-.header .menu-link {
-  padding: 20px 0;
-  margin: 0 16px;
+.nav-menu .menu-link {
+  padding: 20px 16px;
 }
 
-.search-button, .like-button {
-  margin: 0 12px;
+.navigation .nav-buttons {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.nav-buttons .search-button, .nav-buttons .like-button {
+  padding: 22px 12px;
+}
+
+.nav-buttons .like-button::after {
+  content: "12";
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 10px;
+  line-height: 10px;
+  color: #ffffff;
+  background-color: #7db54f;
+  width: 20px;
+  display: block;
+  border-radius: 50%;
+  text-align: center;
+  padding: 5px 0;
+  position: relative;
+  left: 8px;
+  bottom: 34px;
 }
 
 .nav-buttons .interest-button {
-  margin-left: 20px;
+  margin: 14px 20px;
+  margin-right: 0;
   padding: 8px 34px;
+  max-height: 36px;
+  box-sizing: border-box;
 }
 
 /* main */
@@ -168,6 +220,7 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  background-color: #e6f0f6;
   width: 100%;
 }
 
@@ -305,6 +358,7 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  background-color: #82b3d3;
 }
 
 .mail .header-2, .mail .post-header {
@@ -317,17 +371,16 @@ body {
   display: flex;
   justify-content: space-between;
   padding: 40px 70px 30px 70px;
-  align-items: center;
 }
 
 .footer .social-networks {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  width: 142px;
 }
 
-.social-networks .link:not(:last-child) {
-  margin-right: 27px;
+.social-networks .link {
+  padding: 12px;
 }
 
 .footer .tel {
@@ -343,6 +396,7 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  background-color: #756157;
   padding: 70px;
   padding-top: 35px;
   text-align: left;
@@ -372,14 +426,63 @@ body {
 
 .form .hotels-form {
   display: flex;
+  justify-content: space-between;
   margin-top: 40px;
+  font-family: "PT Sans", Arial, sans-serif;
 }
 
-.form .form-fieldset {
+.form .hotels-form-part {
+  display: flex;
+}
+
+.form .hotels-form-fieldset {
   border: none;
   padding: 0;
+  margin: 0;
   display: flex;
   flex-direction: column;
+}
+
+.form .hotels-form-fieldset:first-child {
+  margin-right: 70px;
+}
+
+.hotels-form .fieldset-header {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+  text-transform: capitalize;
+  margin-bottom: 32px;
+}
+
+.hotels-form .check-variant:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+.hotels-form .check-variant-label {
+  font-size: 18px;
+  line-height: 23px;
+}
+
+.hotels-form-button {
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #ffffff;
+  padding: 8px 0;
+  text-align: center;
+  width: 191px;
+}
+
+.hotels-form-button.submit {
+  background-color: #82b3d3;
+  margin-top: 56px;
+  margin-bottom: 32px;
+}
+
+.hotels-form-button.reset {
+  background-color: inherit;
 }
 
 .hotels {
@@ -404,13 +507,67 @@ body {
   margin: 0;
 }
 
+.catalog-form .select {
+  padding: 14px 20px;
+  margin-left: auto;
+  margin-right: 70px;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.catalog-form-button {
+  padding: 17px 16px;
+  background-color: #ffffff;
+}
+
+.catalog-form-button img {
+  margin: 0;
+}
+
+.catalog {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+
 .catalog .card {
+  width: 340px;
+  box-sizing: border-box;
   padding: 20px;
   outline: solid violet;
+  display: flex;
+  flex-direction: column;
+}
+
+.card > img {
+  margin: 0;
+  margin-bottom: 16px;
 }
 
 .card .header-3 {
+  margin: 0;
+  margin-bottom: 16px;
   text-transform: none;
+  text-align: left;
+}
+
+.card .hotel-cost {
+  margin: 0;
+  margin-bottom: 16px;
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+}
+
+.hotel-cost .cost-item {
+  margin: 0;
+}
+
+.hotel-features {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px 20px;
 }
 
 .hotel-features .link,
@@ -429,11 +586,17 @@ body {
 
 .hotel-features .favourite-button {
   background-color: #82b3d3;
-  padding: 8px 20px;
+  text-align: center;
+  padding: 8px 0;
 }
 
 .hotel-features .favourite-button.favourite {
   background-color: #7db54f;
+}
+
+.stars {
+  display: flex;
+  align-items: center;
 }
 
 .stars img {
@@ -496,5 +659,9 @@ body {
 
 .list-item.active-item .link {
   color: #000000;
+  background-color: #f2f2f2;
+}
+
+.catalog-mail .email-input {
   background-color: #f2f2f2;
 }
