@@ -241,7 +241,6 @@ body {
 .about-blocks .off-list {
   background-color: #82b3d3;
   padding: 102px 85px;
-  height: 181px;
 }
 
 .about-list {
@@ -253,14 +252,12 @@ body {
 
 .about-list .about-item:nth-child(odd) {
   background-color: #f0f6fa;
-  padding: 112px 85px;
-  height: 160px;
+  padding: 113px 85px 112px;
 }
 
 .about-list .about-item:nth-child(even) {
   background-color: #e6f0f6;
-  padding: 112px 85px;
-  height: 160px;
+  padding: 113px 85px 112px;
 }
 
 .off-list .header-3,
@@ -287,7 +284,7 @@ body {
 }
 
 .about-blocks .paragraph {
-  margin: 0
+  margin: 0;
   margin-top: 30px;
 }
 
@@ -348,9 +345,10 @@ body {
 .interest .interest-button {
   font-size: 20px;
   line-height: 36px;
-  padding: 8px 0;
-  width: 376px;
+  padding: 8px 50px;
   margin: 0 auto;
+  box-sizing: border-box;
+  display: inline-block;
 }
 
 .mail {
@@ -377,10 +375,17 @@ body {
   display: flex;
   justify-content: space-between;
   width: 142px;
+  flex-wrap: wrap;
 }
 
 .social-networks .link {
   padding: 12px;
+}
+
+.footer .tel-block {
+  display: flex;
+  max-width: 400px;
+  flex-wrap: wrap;
 }
 
 .footer .tel {
@@ -496,18 +501,18 @@ body {
   margin-bottom: 40px;
 }
 
-.hotels .catalog-form {
+.hotels .catalog-view {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.catalog-form .header-2 {
+.catalog-view .header-2 {
   text-align: left;
   margin: 0;
 }
 
-.catalog-form .select {
+.catalog-view .select {
   padding: 14px 20px;
   margin-left: auto;
   margin-right: 70px;
