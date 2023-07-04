@@ -36,7 +36,6 @@ body {
   color: #333333;
   margin: 0 auto;
   padding: 0;
-  outline: solid orange;
 }
 
 .menu-link {
@@ -54,6 +53,7 @@ body {
   font-size: 16px;
   line-height: 20px;
   background-color: #756157;
+  border-radius: 4px;
 }
 
 .header-2 {
@@ -120,6 +120,8 @@ body {
   line-height: 24px;
   width: 452px;
   box-sizing: border-box;
+  border-radius: 4px 0 0 4px;
+  border: none;
 }
 
 .email-button {
@@ -132,6 +134,8 @@ body {
   text-transform: uppercase;
   color: #ffffff;
   background-color: #82b3d3;
+  border-radius: 0 4px 4px 0;
+  border: none;
 }
 
 /* header */
@@ -158,6 +162,10 @@ body {
 
 .nav-menu .menu-link {
   padding: 20px 16px;
+}
+
+.nav-menu .menu-link.active-link {
+  border-bottom: 2px solid #756257;
 }
 
 .navigation .nav-buttons {
@@ -197,18 +205,8 @@ body {
 /* main */
 
 .main {
-  outline: solid aqua;
   width: 1200px;
   flex-grow: 1;
-}
-
-.main > section {
-  outline: solid green;
-}
-
-.about-blocks div, .comfort-blocks div,
-.about-blocks li, .comfort-blocks li {
-  outline: solid yellow;
 }
 
 .banner {
@@ -319,21 +317,21 @@ body {
 .comfort-blocks .comfort-item:nth-child(1) {
   background-image: url("../images/main/house.svg");
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: 163px 81px;
   background-size: auto;
 }
 
 .comfort-blocks .comfort-item:nth-child(2) {
   background-image: url("../images/main/food.svg");
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: 163px 82px;
   background-size: auto;
 }
 
 .comfort-blocks .comfort-item:nth-child(3) {
   background-image: url("../images/main/present.svg");
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: 168px 79px;
   background-size: auto;
 }
 
@@ -513,21 +511,37 @@ body {
 }
 
 .catalog-view .select {
-  padding: 14px 20px;
+  padding: 12px 20px;
   margin-left: auto;
   margin-right: 70px;
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 18px;
   line-height: 21px;
+  border: 2px solid #e5e5e5;
+  border-radius: 4px;
 }
 
 .catalog-form-button {
-  padding: 17px 16px;
+  background-repeat: no-repeat;
+  background-position: 12px 14px;
+  background-size: 16px 14px;
   background-color: #ffffff;
+  width: 44px;
+  height: 44px;
+  border: 2px solid #000000;
+  border-radius: 4px;
 }
 
-.catalog-form-button img {
-  margin: 0;
+.catalog-form-button:nth-child(1) {
+  background-image: url("../images/catalog/vector-1.png");
+}
+
+.catalog-form-button:nth-child(2) {
+  background-image: url("../images/catalog/vector-2.png");
+}
+
+.catalog-form-button:nth-child(3) {
+  background-image: url("../images/catalog/vector-3.png");
 }
 
 .catalog {
@@ -540,9 +554,10 @@ body {
   width: 340px;
   box-sizing: border-box;
   padding: 20px;
-  outline: solid violet;
   display: flex;
   flex-direction: column;
+  border: 1px solid #e6e6e6;
+  border-radius: 4px;
 }
 
 .card > img {
@@ -573,6 +588,7 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 16px 20px;
+  margin-top: auto;
 }
 
 .hotel-features .link,
@@ -593,26 +609,31 @@ body {
   background-color: #82b3d3;
   text-align: center;
   padding: 8px 0;
+  border-radius: 4px;
 }
 
 .hotel-features .favourite-button.favourite {
   background-color: #7db54f;
 }
 
-.stars {
-  display: flex;
-  align-items: center;
+.hotels-features .stars {
+  margin: 0;
+  padding: 0;
+  height: 37px;
 }
 
 .stars img {
-  margin-right: 6px;
+  margin: 0;
+  padding: 0;
 }
 
 .hotel-features .rating {
   font-weight: 400;
   color: #333333;
   background-color: #f2f2f2;
-  padding: 9px 22px 8px 23px;
+  padding: 9px 0 8px 0;
+  border-radius: 4px;
+  text-align: center;
 }
 
 .separator img {
@@ -648,6 +669,7 @@ body {
   width: 60px;
   padding-top: 11px;
   padding-bottom: 12px;
+  border-radius: 4px;
 }
 
 .list-item.ellipsis {
