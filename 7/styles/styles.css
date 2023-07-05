@@ -136,6 +136,7 @@ body {
   background-color: #82b3d3;
   border-radius: 0 4px 4px 0;
   border: none;
+  cursor: pointer;
 }
 
 /* header */
@@ -465,6 +466,16 @@ body {
 .hotels-form .check-variant-label {
   font-size: 18px;
   line-height: 23px;
+  cursor: pointer;
+}
+
+.hotels-form .checkbox,
+.hotels-form .radio {
+  cursor: pointer;
+}
+
+.hotels-form .range {
+  cursor: pointer;
 }
 
 .hotels-form-button {
@@ -476,15 +487,20 @@ body {
   padding: 8px 0;
   text-align: center;
   width: 191px;
+  cursor: pointer;
 }
 
 .hotels-form-button.submit {
+  border: none;
+  border-radius: 4px;
   background-color: #82b3d3;
   margin-top: 56px;
   margin-bottom: 32px;
 }
 
 .hotels-form-button.reset {
+  border: none;
+  border-radius: 4px;
   background-color: inherit;
 }
 
@@ -519,6 +535,7 @@ body {
   line-height: 21px;
   border: 2px solid #e5e5e5;
   border-radius: 4px;
+  cursor: pointer;
 }
 
 .catalog-form-button {
@@ -528,8 +545,9 @@ body {
   background-color: #ffffff;
   width: 44px;
   height: 44px;
-  border: 2px solid #000000;
+  border: 2px solid #e5e5e5;
   border-radius: 4px;
+  cursor: pointer;
 }
 
 .catalog-form-button:nth-child(1) {
@@ -691,4 +709,78 @@ body {
 
 .catalog-mail .email-input {
   background-color: #f2f2f2;
+}
+
+
+
+
+.interest-button:hover {
+  background-color: #615048;
+}
+
+.interest-button:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.list-item:not(.ellipsis):not(.active-item) .link:hover,
+.email-button:hover,
+.hotels-form-button.submit:hover,
+.hotel-features .favourite-button:not(.favourite):hover {
+  background-color: #68a2ca;
+}
+
+.list-item:not(.ellipsis):not(.active-item) .link:active,
+.email-button:active,
+.hotels-form-button.submit:active,
+.hotel-features .favourite-button:not(.favourite):active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.hotel-features .favourite-button.favourite:hover {
+  background-color: #6c9e42;
+}
+
+.hotel-features .favourite-button.favourite:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.hotels-form-button.reset:hover {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.hotels-form-button.reset:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.footer .tel:hover {
+  color: #756157;
+}
+
+.footer .tel:active {
+  color: rgba(117, 97, 87, 0.3);
+}
+
+.catalog-view .select:hover,
+.catalog-view .select:focus,
+.catalog-view .select:active {
+  border: 2px solid #68a2ca;
+}
+
+.email-input:active,
+.email-input:focus,
+.email-input:hover {
+  outline: none;
+}
+
+.catalog-form-button:hover,
+.catalog-form-button:active {
+  border: 2px solid #000000;
+}
+
+.form .form-navigation-item.link:hover {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.form .form-navigation-item.link:active {
+  color: rgba(255, 255, 255, 0.3);
 }
