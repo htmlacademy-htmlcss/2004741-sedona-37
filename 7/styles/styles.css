@@ -158,11 +158,14 @@ body {
 }
 
 .logo {
+  padding: 0;
+  margin: 0;
   margin-right: 28px;
 }
 
 .nav-menu .menu-link {
-  padding: 20px 16px;
+  padding: 20px 0;
+  margin: 0 16px;
 }
 
 .nav-menu .menu-link.active-link {
@@ -378,7 +381,25 @@ body {
 }
 
 .social-networks .link {
-  padding: 12px;
+  width: 47px;
+  padding: 12px 0;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.social-networks .link.vk-logo {
+  background-image: url("../images/footer/vk.svg");
+  background-size: 24px 14px;
+}
+
+.social-networks .link.tg-logo {
+  background-image: url("../images/footer/tg.svg");
+  background-size: 18px 16px;
+}
+
+.social-networks .link.yt-logo {
+  background-image: url("../images/footer/yt.svg");
+  background-size: 22px 17px;
 }
 
 .footer .tel-block {
@@ -391,6 +412,13 @@ body {
   font-size: 40px;
   line-height: 40px;
   color: #000000;
+}
+
+.footer .html-logo {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("../images/footer/html-academy-logo.svg");
+  background-size: 115px 34px;
 }
 
 /* catalog */
@@ -451,7 +479,8 @@ body {
   margin-right: 70px;
 }
 
-.hotels-form .fieldset-header {
+.hotels-form .fieldset-header,
+.modal-form .fieldset-header {
   font-size: 20px;
   line-height: 24px;
   font-weight: 700;
@@ -463,6 +492,11 @@ body {
   margin-bottom: 16px;
 }
 
+.hotels-form .check-variant {
+  display: flex;
+  align-items: center;
+}
+
 .hotels-form .check-variant-label {
   font-size: 18px;
   line-height: 23px;
@@ -472,6 +506,18 @@ body {
 .hotels-form .checkbox,
 .hotels-form .radio {
   cursor: pointer;
+  margin: 0;
+  margin-right: 16px;
+  width: 20px;
+  height: 20px;
+}
+
+.hotels-form .checkbox {
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: 20px 20px;
+  background-color: inherit;
+  background-image: url("../images/catalog/checkbox.png");
 }
 
 .hotels-form .range {
@@ -560,6 +606,10 @@ body {
 
 .catalog-form-button:nth-child(3) {
   background-image: url("../images/catalog/vector-3.png");
+}
+
+.catalog-form-button.active {
+  border: 2px solid #000000;
 }
 
 .catalog {
@@ -714,6 +764,32 @@ body {
 
 
 
+
+
+.modal-form .modal-form-button {
+  font-size: 20px;
+  line-height: 24px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #ffffff;
+  background-color: #83b3d3;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-align: center;
+  width: 100%;
+  padding: 18px;
+}
+
+
+
+
+
+
+
+
+/* Декоративные изменения */
+
 .interest-button:hover {
   background-color: #615048;
 }
@@ -752,11 +828,13 @@ body {
   color: rgba(255, 255, 255, 0.3);
 }
 
-.footer .tel:hover {
+.footer .tel:hover,
+.nav-menu .menu-link:hover {
   color: #756157;
 }
 
-.footer .tel:active {
+.footer .tel:active,
+.nav-menu .menu-link:active {
   color: rgba(117, 97, 87, 0.3);
 }
 
@@ -778,9 +856,45 @@ body {
 }
 
 .form .form-navigation-item.link:hover {
-  color: rgba(255, 255, 255, 0.6);
+  opacity: 0.6;
 }
 
 .form .form-navigation-item.link:active {
-  color: rgba(255, 255, 255, 0.3);
+  opacity: 0.3;
+}
+
+.social-networks .link.vk-logo:hover,
+.social-networks .link.vk-logo:active {
+  background-image: url("../images/footer/vk-hover.svg");
+}
+
+.social-networks .link.tg-logo:hover,
+.social-networks .link.tg-logo:active {
+  background-image: url("../images/footer/tg-hover.svg");
+}
+
+.social-networks .link.yt-logo:hover,
+.social-networks .link.yt-logo:active {
+  background-image: url("../images/footer/yt-hover.svg");
+}
+
+.social-networks .link.vk-logo:active {
+  opacity: 0.3;
+}
+
+.social-networks .link.tg-logo:active {
+  opacity: 0.3;
+}
+
+.social-networks .link.yt-logo:active {
+  opacity: 0.3;
+}
+.nav-buttons .search-button:hover,
+.nav-buttons .like-button:hover {
+  opacity: 0.6;
+}
+
+.nav-buttons .search-button:active,
+.nav-buttons .like-button:active {
+  opacity: 0.3;
 }

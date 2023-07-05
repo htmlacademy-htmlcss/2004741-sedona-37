@@ -4,13 +4,14 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" href="images/favicon.ico">
     <base href="https://htmlacademy-htmlcss.github.io/2004741-sedona-37/7/">
 </head>
   <body>
     <header class="header">
       <nav class="navigation">
         <div class="nav-menu">
-          <a href="index.html" class="link"><img class="logo" alt="Логотип." src="images/header/logo.svg" width="140" height="70"></a>
+          <a href="index.html" class="link logo"><img alt="Логотип." src="images/header/logo.svg" width="140" height="70"></a>
           <a href="index.html" class="menu-link link">Главная</a>
           <a href="index.html" class="menu-link link">О Седоне</a>
           <a href="catalog.html" class="menu-link active-link link">Гостиницы</a>
@@ -78,7 +79,7 @@
             <option value="first-cheap">Сначала дешевые</option>
           </select>
           <div>
-            <button class="catalog-form-button" type="button"><span class="visually-hidden">Расположение карточек таблицей.</span></button>
+            <button class="catalog-form-button active" type="button"><span class="visually-hidden">Расположение карточек таблицей.</span></button>
             <button class="catalog-form-button" type="button"><span class="visually-hidden">Расположение карточек по одной.</span></button>
             <button class="catalog-form-button" type="button"><span class="visually-hidden">Расположение карточек списком.</span></button>
           </div>
@@ -166,12 +167,12 @@
 
     <footer class="footer">
       <div class="social-networks">
-        <a href="#" class="link"><img alt="Логотип ВКонтакте." src="images/footer/vk.svg" width="24" height="14"></a>
-        <a href="#" class="link"><img alt="Логотип Телеграм." src="images/footer/tg.svg" width="18" height="15"></a>
-        <a href="#" class="link"><img alt="Логотип Ютуб." src="images/footer/yt.svg" width="22" height="17"></a>
+        <a href="https://vk.com/htmlacademy" class="link vk-logo"><span class="visually-hidden">Логотип ВКонтакте.</span></a>
+        <a href="https://t.me/htmlacademy" class="link tg-logo"><span class="visually-hidden">Логотип Телеграм.</span></a>
+        <a href="https://www.youtube.com/user/htmlacademyru" class="link yt-logo"><span class="visually-hidden">Логотип Ютуб.</span></a>
       </div>
-      <span><a href="tel:+78128121212" class="link tel">+7 (812) 812-12-12</a></span>
-      <a href="https://htmlacademy.ru/" class="link"><img alt="Логотип HTML Академии." src="images/footer/html-academy.svg" width="115" height="33"></a>
+      <span class="tel-block"><a href="tel:+78128121212" class="link tel">+7 (812) 812-12-12</a></span>
+      <a href="https://htmlacademy.ru/" class="link html-logo"><span class="visually-hidden">Логотип HTML Академии.</span></a>
     </footer>
   </body>
 </html>
