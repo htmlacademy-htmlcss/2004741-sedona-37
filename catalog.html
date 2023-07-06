@@ -12,13 +12,14 @@
       <nav class="navigation">
         <div class="nav-menu">
           <a href="index.html" class="link logo"><img alt="Логотип." src="images/header/logo.svg" width="140" height="70"></a>
+          <span class="fake-logo"></span>
           <a href="index.html" class="menu-link link">Главная</a>
           <a href="index.html" class="menu-link link">О Седоне</a>
           <a href="catalog.html" class="menu-link active-link link">Гостиницы</a>
         </div>
         <div class="nav-buttons">
-          <a href="#" class="search-button link"><img alt="Лупа." src="images/header/search.png" width="19" height="19"></a>
-          <a href="#" class="like-button link"><img alt="Сердечко." src="images/header/heart.png" width="18" height="17"></a>
+          <a href="#" class="search-button link"><span class="visually-hidden">Лупа.</span></a>
+          <a href="#" class="like-button link"><span class="visually-hidden">Сердечко.</span><span class="like-number">12</span></a>
           <a href="#" class="interest-button link">Хочу сюда!</a>
         </div>
       </nav>
@@ -37,25 +38,25 @@
             <fieldset class="hotels-form-fieldset">
               <label class="fieldset-header">Инфраструктура:</label>
               <span class="check-variant">
-                <input class="checkbox" type="checkbox" checked value="swimming-pool" id="swimming-pool" name="swimming-pool"><label class="check-variant-label" for="swimming-pool">Бассейн</label>
+                <input class="checkbox" type="checkbox" checked value="swimming-pool" id="swimming-pool" name="swimming-pool"><span class="fake-checkbox"></span><label class="check-variant-label" for="swimming-pool">Бассейн</label>
               </span>
               <span class="check-variant">
-                <input class="checkbox" type="checkbox" checked value="parking" id="parking" name="parking"><label class="check-variant-label" for="parking">Парковка</label>
+                <input class="checkbox" type="checkbox" checked value="parking" id="parking" name="parking"><span class="fake-checkbox"></span><label class="check-variant-label" for="parking">Парковка</label>
               </span>
               <span class="check-variant">
-                <input class="checkbox" type="checkbox" value="wi-fi" id="wi-fi" name="wi-fi"><label class="check-variant-label" for="wi-fi">Wi-Fi</label>
+                <input class="checkbox" type="checkbox" value="wi-fi" id="wi-fi" name="wi-fi"><span class="fake-checkbox"></span><label class="check-variant-label" for="wi-fi">Wi-Fi</label>
               </span>
             </fieldset>
             <fieldset class="hotels-form-fieldset">
               <label class="fieldset-header">Тип жилья:</label>
               <span class="check-variant">
-                <input class="radio" type="radio" checked value="hotel" id="hotel" name="hotel"><label class="check-variant-label" for="hotel">Гостиница</label>
+                <input class="radio" type="radio" checked value="hotel" id="hotel" name="hotel"><span class="fake-radio"></span><label class="check-variant-label" for="hotel">Гостиница</label>
               </span>
               <span class="check-variant">
-                <input class="radio" type="radio" value="motel" id="motel" name="hotel"><label class="check-variant-label" for="motel">Мотель</label>
+                <input class="radio" type="radio" value="motel" id="motel" name="hotel"><span class="fake-radio"></span><label class="check-variant-label" for="motel">Мотель</label>
               </span>
               <span class="check-variant">
-                <input class="radio" type="radio" value="apartments" id="apartments" name="hotel"><label class="check-variant-label" for="apartments">Апартаменты</label>
+                <input class="radio" type="radio" value="apartments" id="apartments" name="hotel"><span class="fake-radio"></span><label class="check-variant-label" for="apartments">Апартаменты</label>
               </span>
             </fieldset>
           </div>

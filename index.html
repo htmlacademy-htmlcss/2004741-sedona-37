@@ -11,15 +11,16 @@
     <header class="header">
       <nav class="navigation">
         <div class="nav-menu">
-          <a href="index.html" class="link"><img class="logo" alt="Логотип." src="images/header/logo.svg" width="140" height="70"></a>
+          <a href="index.html" class="link logo"><img alt="Логотип." src="images/header/logo.svg" width="140" height="70"></a>
+          <span class="fake-logo"></span>
           <a href="index.html" class="menu-link active-link link">Главная</a>
           <a href="#about" class="menu-link link">О Седоне</a>
           <a href="catalog.html" class="menu-link link">Гостиницы</a>
         </div>
         <div class="nav-buttons">
-          <a href="#" class="search-button link"><img alt="Лупа." src="images/header/search.png" width="19" height="19"></a>
-          <a href="#" class="like-button link"><img alt="Сердечко." src="images/header/heart.png" width="18" height="17"></a>
-          <a href="#" class="interest-button link open-modal">Хочу сюда!</a>
+          <a href="#" class="search-button link"><span class="visually-hidden">Лупа.</span></a>
+          <a href="#" class="like-button link"><span class="visually-hidden">Сердечко.</span><span class="like-number">12</span></a>
+          <a href="#" class="interest-button link">Хочу сюда!</a>
         </div>
       </nav>
     </header>
@@ -144,6 +145,6 @@
       </form>
     </dialog>
 
-    <script src="./scripts/app.js" defer></script>
+    <script src="scripts/app.js" defer></script>
   </body>
 </html>
