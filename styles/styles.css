@@ -406,24 +406,21 @@ body {
 
 .social-networks .link {
   width: 47px;
-  padding: 12px 0;
-  background-repeat: no-repeat;
-  background-position: center;
+  height: 40px;
+  padding: 0;
+  align-items: center;
 }
 
-.social-networks .vk-logo {
-  background-image: url("../images/footer/vk.svg");
-  background-size: 24px 14px;
+.social-networks .link.vk-logo svg {
+  margin-top: 13px;
 }
 
-.social-networks .tg-logo {
-  background-image: url("../images/footer/tg.svg");
-  background-size: 18px 16px;
+.social-networks .link.tg-logo svg {
+  margin-top: 12px;
 }
 
-.social-networks .yt-logo {
-  background-image: url("../images/footer/yt.svg");
-  background-size: 22px 17px;
+.social-networks .link.yt-logo svg {
+  margin-top: 11px;
 }
 
 .footer .tel-block {
@@ -440,10 +437,7 @@ body {
 }
 
 .footer .html-logo {
-  background-repeat: no-repeat;
-  background-position: center;
-  background-image: url("../images/footer/html-academy-logo.svg");
-  background-size: 115px 34px;
+  width: 115px;
 }
 
 /* catalog */
@@ -537,6 +531,7 @@ body {
   height: 20px;
   z-index: 2;
   opacity: 0;
+  cursor: pointer;
 }
 
 .hotels-form .fake-checkbox,
@@ -546,7 +541,6 @@ body {
   height: 20px;
   border-radius: 4px;
   background-color: #ffffff;
-  cursor: pointer;
 }
 
 .hotels-form .fake-radio {
@@ -574,6 +568,7 @@ body {
 	appearance: textfield;
 	margin: 0;
 	border: none;
+	background-color: #f2f2f2;
 }
 
 .hotels-form .cost-input::-webkit-outer-spin-button,
@@ -714,7 +709,7 @@ body {
   border-radius: 4px;
 }
 
-.card > img {
+.card .image-link {
   margin: 0;
   margin-bottom: 16px;
 }
@@ -895,22 +890,20 @@ body {
   color: rgba(117, 97, 87, 0.3);
 }
 
-.form .form-navigation-item.link:hover {
+.form .form-navigation-item.link:hover,
+.form .form-navigation-item.link:focus-visible {
   opacity: 0.6;
+  outline: none;
 }
 
 .form .form-navigation-item.link:active {
   opacity: 0.3;
 }
 
-.form .form-navigation-item.link:focus {
-  outline: none;
-}
-
 /* кнопки */
 
 .interest-button:hover,
-.interest-button:focus {
+.interest-button:focus-visible {
   background-color: #615048;
   outline: none;
 }
@@ -920,13 +913,13 @@ body {
 }
 
 .list-item:not(.ellipsis):not(.active-item) .link:hover,
-.list-item:not(.ellipsis):not(.active-item) .link:focus,
+.list-item:not(.ellipsis):not(.active-item) .link:focus-visible,
 .email-button:hover,
-.email-button:focus,
+.email-button:focus-visible,
 .hotels-form-button.submit:hover,
-.hotels-form-button.submit:focus,
+.hotels-form-button.submit:focus-visible,
 .hotel-features .favourite-button:not(.favourite):hover,
-.hotel-features .favourite-button:not(.favourite):focus {
+.hotel-features .favourite-button:not(.favourite):focus-visible {
   background-color: #68a2ca;
   outline: none;
 }
@@ -939,7 +932,7 @@ body {
 }
 
 .hotel-features .favourite-button.favourite:hover,
-.hotel-features .favourite-button.favourite:focus {
+.hotel-features .favourite-button.favourite:focus-visible {
   background-color: #6c9e42;
   outline: none;
 }
@@ -956,7 +949,7 @@ body {
   color: rgba(255, 255, 255, 0.3);
 }
 
-.hotels-form-button.reset:focus {
+.hotels-form-button.reset:focus-visible {
   outline: 3px solid #83b3d3;
 }
 
@@ -969,7 +962,7 @@ body {
   border: 2px solid #000000;
 }
 
-.catalog-form-button:focus {
+.catalog-form-button:focus-visible {
   outline: none;
   border: 2px solid #68a2ca;
 }
@@ -983,37 +976,24 @@ body {
   background-color: #e5e5e5;
 }
 
+.list-item.active-item .link:focus-visible,
+.list-item.active-item .link:hover {
+  outline: none;
+  opacity: 0.6;
+}
+
+.list-item.active-item .link:active {
+  opacity: 0.3;
+}
+
 /* иконки */
 
-.social-networks .vk-logo:hover,
-.social-networks .vk-logo:active {
-  background-image: url("../images/footer/vk-hover.svg");
-}
-
-.social-networks .tg-logo:hover,
-.social-networks .tg-logo:active {
-  background-image: url("../images/footer/tg-hover.svg");
-}
-
-.social-networks .yt-logo:hover,
-.social-networks .yt-logo:active {
-  background-image: url("../images/footer/yt-hover.svg");
-}
-
-.social-networks .vk-logo:active {
-  opacity: 0.3;
-}
-
-.social-networks .tg-logo:active {
-  opacity: 0.3;
-}
-
-.social-networks .yt-logo:active {
-  opacity: 0.3;
-}
 .nav-buttons .search-button:hover,
-.nav-buttons .like-button:hover {
+.nav-buttons .search-button:focus-visible,
+.nav-buttons .like-button:hover,
+.nav-buttons .like-button:focus-visible {
   opacity: 0.6;
+  outline: none;
 }
 
 .nav-buttons .search-button:active,
@@ -1021,12 +1001,66 @@ body {
   opacity: 0.3;
 }
 
+.social-networks .vk-logo:hover path,
+.social-networks .vk-logo:focus-visible path,
+.social-networks .tg-logo:hover path,
+.social-networks .tg-logo:focus-visible path,
+.social-networks .yt-logo:hover path,
+.social-networks .yt-logo:focus-visible path {
+  fill: #68a2ca;
+}
+
+.social-networks .vk-logo:focus-visible,
+.social-networks .tg-logo:focus-visible,
+.social-networks .yt-logo:focus-visible {
+  outline: none;
+}
+
+.social-networks .vk-logo:active,
+.social-networks .tg-logo:active,
+.social-networks .yt-logo:active {
+  opacity: 0.3;
+}
+
+.footer .html-logo:hover path,
+.footer .html-logo:active path,
+.footer .html-logo:focus-visible path {
+  fill: #756157;
+}
+
+.footer .html-logo:active {
+  opacity: 0.3;
+}
+
+.footer .html-logo:focus-visible {
+  outline: none;
+}
+
 /* input */
+
+.hotels-form .cost-input:hover,
+.hotels-form .cost-input:focus-visible {
+	background-color: #e6e6e6;
+}
+
+.hotels-form .cost-input:focus-visible {
+  outline: 3px solid #83b3d3;
+}
+
+.hotels-form .cost-input:active {
+  outline: none;
+}
 
 .catalog-view .select:hover,
 .catalog-view .select:focus,
 .catalog-view .select:active {
   border: 2px solid #68a2ca;
+  outline: none;
+}
+
+.catalog-view .select:disabled {
+  color: rgba(0, 0, 0, 0.3);
+  border: 2px solid rgba(0, 0, 0, 0.3);
 }
 
 .email-input:active,
@@ -1036,6 +1070,25 @@ body {
 }
 
 /* маленькие input */
+
+.checkbox:hover + .fake-checkbox,
+.checkbox:hover + .fake-checkbox + .check-variant-label,
+.radio:hover + .fake-radio,
+.radio:hover + .fake-radio + .check-variant-label {
+  opacity: 0.6;
+}
+
+.checkbox:active + .fake-checkbox,
+.checkbox:active + .fake-checkbox + .check-variant-label,
+.radio:active + .fake-radio,
+.radio:active + .fake-radio + .check-variant-label {
+  opacity: 0.3;
+}
+
+.checkbox:focus-visible + .fake-checkbox,
+.radio:focus-visible + .fake-radio {
+  outline: 3px solid #83b3d3;
+}
 
 .checkbox:checked + .fake-checkbox {
   background-repeat: no-repeat;
@@ -1049,4 +1102,26 @@ body {
   background-position: center;
   background-image: url("../images/catalog/radio-mark.png");
   background-size: 10px 10px;
+}
+
+/* картинки */
+
+.logo:hover,
+.logo:focus-visible {
+  opacity: 0.6;
+  outline: none;
+}
+
+.logo:active {
+  opacity: 0.3;
+}
+
+.card .image-link:hover,
+.card .image-link:focus-visible {
+  opacity: 0.6;
+  outline: none;
+}
+
+.card .image-link:active {
+  opacity: 0.3;
 }
