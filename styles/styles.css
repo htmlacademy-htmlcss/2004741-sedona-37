@@ -553,6 +553,59 @@ body {
   border-radius: 50%;
 }
 
+.hotels-form .cost {
+  display: flex;
+  gap: 2px;
+  position: relative;
+}
+
+.hotels-form .cost-input {
+  width: 143px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+  outline: none;
+  border-radius:
+	-moz-appearance: textfield;
+	-webkit-appearance: textfield;
+	appearance: textfield;
+	margin: 0;
+	border: none;
+}
+
+.hotels-form .cost-input::-webkit-outer-spin-button,
+.hotels-form .cost-input::-webkit-inner-spin-button {
+	display: none;
+}
+
+.hotels-form .cost-input.from {
+  border-radius: 4px 0 0 4px;
+}
+
+.hotels-form .cost-input.to {
+  border-radius: 0 4px 4px 0;
+}
+
+.hotels-form .from-to {
+  position: absolute;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  color: #a9a9a9;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  top: 12px;
+  left: 106px;
+}
+
+.hotels-form .from-to.to {
+  left: 251px;
+}
+
 .hotels-form .range {
   cursor: pointer;
 }
