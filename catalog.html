@@ -65,11 +65,16 @@
               <label class="fieldset-header">Стоимость, ₽:</label>
               <span class="cost">
                 <input class="cost-input from" value="0" type="number" id="from" name="from">
-                <span class="from-to">от</span>
+                <span class="from-to from">от</span>
                 <input class="cost-input to" value="9000" type="number" id="to" name="to">
                 <span class="from-to to">до</span>
               </span>
-              <input class="range" id="cost" name="cost" type="range">
+              <span class="range">
+                <span class="range-bar">
+                  <button type="button" class="range-button min"></button>
+                  <button type="button" class="range-button max"></button>
+                </span>
+              </span>
             </fieldset>
             <fieldset class="hotels-form-fieldset">
               <button class="hotels-form-button submit" type="submit">Применить</button>

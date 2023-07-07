@@ -551,6 +551,7 @@ body {
   display: flex;
   gap: 2px;
   position: relative;
+  margin-bottom: 36px;
 }
 
 .hotels-form .cost-input {
@@ -603,6 +604,32 @@ body {
 
 .hotels-form .range {
   cursor: pointer;
+  padding: 0;
+  margin: 0;
+}
+
+.hotels-form .range-bar {
+  width: 227px;
+  height: 4px;
+  position: relative;
+  background-color: #ffffff;
+  display: block;
+  cursor: pointer;
+}
+
+.range-bar .range-button {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: -8px;
+  border-radius: 5px;
+  border: none;
+  background-color: #ffffff;
+  cursor: pointer;
+}
+
+.range-bar .range-button.max {
+  left: 207px;
 }
 
 .hotels-form-button {
@@ -663,6 +690,10 @@ body {
   border: 2px solid #e5e5e5;
   border-radius: 4px;
   cursor: pointer;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -o-appearance: none;
+  appearance: none;
 }
 
 .catalog-form-button {
@@ -1052,7 +1083,7 @@ body {
 }
 
 .catalog-view .select:hover,
-.catalog-view .select:focus,
+.catalog-view .select:focus-visible,
 .catalog-view .select:active {
   border: 2px solid #68a2ca;
   outline: none;
