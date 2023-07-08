@@ -602,17 +602,11 @@ body {
   left: 251px;
 }
 
-.hotels-form .range {
-  cursor: pointer;
-  padding: 0;
-  margin: 0;
-}
-
 .hotels-form .range-bar {
-  width: 227px;
+  width: 287px;
   height: 4px;
   position: relative;
-  background-color: #ffffff;
+  background: linear-gradient(to right, #ffffff 227px, #646b6e 227px 287px);
   display: block;
   cursor: pointer;
 }
@@ -681,6 +675,7 @@ body {
 }
 
 .catalog-view .select {
+  width: 292px;
   padding: 12px 20px;
   margin-left: auto;
   margin-right: 70px;
@@ -694,6 +689,10 @@ body {
   -moz-appearance: none;
   -o-appearance: none;
   appearance: none;
+  background-repeat: no-repeat;
+  background-position: 260px 19px;
+  background-size: 12px 9px;
+  background-image: url("../images/catalog/arrow.png");
 }
 
 .catalog-form-button {
@@ -1072,6 +1071,7 @@ body {
 .hotels-form .cost-input:hover,
 .hotels-form .cost-input:focus-visible {
 	background-color: #e6e6e6;
+	outline: none;
 }
 
 .hotels-form .cost-input:focus-visible {
@@ -1080,6 +1080,18 @@ body {
 
 .hotels-form .cost-input:active {
   outline: none;
+}
+
+.hotels-form .range-button:hover {
+  outline: none;
+}
+
+.hotels-form .range-button:active {
+  outline: 2px solid #83b3d3;
+}
+
+.hotels-form .range-button:focus-visible {
+  outline: 3px solid #83b3d3;
 }
 
 .catalog-view .select:hover,
