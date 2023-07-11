@@ -158,12 +158,16 @@ body {
   display: flex;
   flex-wrap: wrap;
   position: relative;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .logo {
   padding: 0;
   margin: 0;
   position: absolute;
+  cursor: default;
 }
 
 .fake-logo {
@@ -179,11 +183,15 @@ body {
 .nav-menu .menu-link.active-link {
   border-bottom: 2px solid #756257;
   padding-bottom: 18px;
+  cursor: default;
 }
 
 .navigation .nav-buttons {
   display: flex;
-  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  min-width: 268px;
 }
 
 .nav-buttons .search-button, .nav-buttons .like-button {
@@ -246,7 +254,7 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  background-color: #e6f0f6;
+  background-color: #2e4e63;
   width: 100%;
 }
 
@@ -515,6 +523,7 @@ body {
   display: flex;
   align-items: center;
   position: relative;
+  margin: 0;
 }
 
 .hotels-form .check-variant-label {
@@ -865,6 +874,7 @@ body {
 .list-item.active-item .link {
   color: #000000;
   background-color: #f2f2f2;
+  cursor: default;
 }
 
 .catalog-mail .email-input {
@@ -904,8 +914,8 @@ body {
 
 .footer .tel:hover,
 .footer .tel:focus,
-.nav-menu .menu-link:hover,
-.nav-menu .menu-link:focus {
+.nav-menu .menu-link:not(.active-link):hover,
+.nav-menu .menu-link:not(.active-link):focus {
   color: #756157;
   outline: none;
   text-decoration: none;
@@ -916,7 +926,7 @@ body {
 }
 
 .footer .tel:active,
-.nav-menu .menu-link:active {
+.nav-menu .menu-link:not(.active-link):active {
   color: rgba(117, 97, 87, 0.3);
 }
 
@@ -1004,16 +1014,6 @@ body {
 .hotel-features .favourite-button:not(.favourite):disabled,
 .hotel-features .favourite-button.favourite:disabled {
   background-color: #e5e5e5;
-}
-
-.list-item.active-item .link:focus-visible,
-.list-item.active-item .link:hover {
-  outline: none;
-  opacity: 0.6;
-}
-
-.list-item.active-item .link:active {
-  opacity: 0.3;
 }
 
 /* иконки */
@@ -1149,14 +1149,16 @@ body {
 
 /* картинки */
 
-.logo:hover,
-.logo:focus-visible {
+.logo:not(.active):hover,
+.logo:not(.active):focus-visible {
   opacity: 0.6;
   outline: none;
+  cursor: pointer;
 }
 
-.logo:active {
+.logo:not(.active):active {
   opacity: 0.3;
+  cursor: pointer;
 }
 
 .card .image-link:hover,
