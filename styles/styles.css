@@ -506,8 +506,7 @@ body {
   margin-right: 70px;
 }
 
-.hotels-form .fieldset-header,
-.modal-form .fieldset-header {
+.hotels-form .fieldset-header {
   font-size: 20px;
   line-height: 24px;
   font-weight: 700;
@@ -886,6 +885,149 @@ body {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Модальное окно */
+
+.modal {
+  border: none;
+  border-radius: 30px;
+  padding: 64px 70px;
+  width: 717px;
+  box-sizing: border-box;
+}
+
+.modal .header-2 {
+  margin: 0;
+  margin-bottom: 64px;
+  text-align: left;
+}
+
+.modal-form .modal-form-fieldset {
+  border: none;
+  margin: 0;
+  margin-bottom: 48px;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.modal-form .fieldset-header {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+  text-transform: capitalize;
+  margin: 12px 0;
+}
+
+.modal-form .date-input {
+  width: 440px;
+  margin: 0;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+  border-radius: 4px;
+  border: none;
+  background-color: #f2f2f2;
+}
+
+.modal-form .calender {
+  background-image: url("../images/modal/calender.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  top: 16px;
+  right: 22px;
+  width: 16px;
+  height: 15px;
+  opacity: 0.3;
+}
+
+.modal-form .adults-children {
+  display: flex;
+  justify-content: space-between;
+}
+
+.adults-children .modal-form-fieldset.adults {
+  width: 247px;
+}
+
+.adults-children .modal-form-fieldset.children {
+  width: 242px;
+}
+
+.modal-form-fieldset .quantity {
+  display: flex;
+  width: 110px;
+}
+
+.quantity .quantity-number {
+  width: 31px;
+  padding: 14px 0;
+  box-sizing: border-box;
+  text-align: center;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 700;
+	-moz-appearance: textfield;
+	-webkit-appearance: textfield;
+	appearance: textfield;
+	border: none;
+  background-color: #f2f2f2;
+}
+
+.quantity .quantity-number::-webkit-outer-spin-button,
+.quantity .quantity-number::-webkit-inner-spin-button {
+  display: none;
+}
+
+.quantity .quantity-button {
+  background-color: #f2f2f2;
+  border: none;
+  width: 40px;
+  height: 48px;
+  text-align: center;
+  align-items: center;
+}
+
+.quantity .quantity-button.minus {
+  border-radius: 4px 0 0 4px;
+}
+
+.quantity .quantity-button.plus {
+  border-radius: 0 4px 4px 0;
+}
+
+.quantity-button.minus svg {
+  position: relative;
+  top: -2px;
+}
+
+.quantity-button.plus svg {
+  position: relative;
+  top: 2px;
+}
+
 .modal-form .modal-form-button {
   font-size: 20px;
   line-height: 24px;
@@ -894,12 +1036,34 @@ body {
   color: #ffffff;
   background-color: #83b3d3;
   border: none;
-  border-radius: 4px;
+  border-radius: 10px;
   cursor: pointer;
   text-align: center;
   width: 100%;
   padding: 18px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
