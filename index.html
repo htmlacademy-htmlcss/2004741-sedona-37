@@ -10,18 +10,18 @@
   <body>
     <header class="header">
       <nav class="navigation">
-        <div class="nav-menu">
-          <a href="index.html" class="link logo"><img alt="Логотип." src="images/header/logo.svg" width="140" height="70"></a>
-          <span class="fake-logo"></span>
-          <a href="index.html" class="menu-link active-link link">Главная</a>
-          <a href="#about" class="menu-link link">О Седоне</a>
-          <a href="catalog.html" class="menu-link link">Гостиницы</a>
-        </div>
-        <div class="nav-buttons">
-          <a href="#" class="search-button link"><span class="visually-hidden">Лупа.</span></a>
-          <a href="#" class="like-button link"><span class="visually-hidden">Сердечко.</span><span class="like-number">12</span></a>
-          <a href="#" class="interest-button link">Хочу сюда!</a>
-        </div>
+        <ul class="nav-menu">
+          <li><a href="index.html" class="link logo active"><img alt="Логотип." src="images/header/logo.svg" width="140" height="70"></a></li>
+          <li class="fake-logo"></li>
+          <li><a href="index.html" class="menu-link active-link link">Главная</a></li>
+          <li><a href="#about" class="menu-link link">О Седоне</a></li>
+          <li><a href="catalog.html" class="menu-link link">Гостиницы</a></li>
+        </ul>
+        <ul class="nav-buttons">
+          <li><a href="#" class="search-button link"><span class="visually-hidden">Лупа.</span></a></li>
+          <li><a href="#" class="like-button link"><span class="visually-hidden">Сердечко.</span><span class="like-number">12</span></a></li>
+          <li><a href="#" class="interest-button link">Хочу сюда!</a></li>
+        </ul>
       </nav>
     </header>
 
@@ -185,31 +185,67 @@
       </a>
     </footer>
 
-    <dialog class="modal">
-      <h2 class="header-2">Поиск гостиницы в Седоне</h2>
+    <dialog class="modal" open>
+      <div class="modal-header">
+        <h2 class="header-2">Поиск гостиницы в Седоне</h2>
+        <button class="close-modal"><span class="visually-hidden">Кнопка-крестик</span></button>
+      </div>
       <form class="modal-form" action="index.html" method="post">
         <fieldset class="modal-form-fieldset">
           <label class="fieldset-header">Дата заезда:</label>
-          <input>
+          <input type="text" id="date-in" name="date-in" value="27 апреля 2020" class="date-input">
+          <button type="button" class="calender"></button>
+          <span class="date-comment error">Мы не можем отправить вас в прошлое.</span>
         </fieldset>
         <fieldset class="modal-form-fieldset">
           <label class="fieldset-header">Дата выезда:</label>
-          <input>
+          <input type="text" id="date-out" name="date-out" value="1 сентября 2023" class="date-input">
+          <button type="button" class="calender"></button>
+          <span class="date-comment">На эти даты есть свободные номера. Пока есть.</span>
         </fieldset>
-        <div>
-          <fieldset class="modal-form-fieldset">
+        <div class="adults-children">
+          <fieldset class="modal-form-fieldset adults">
             <label class="fieldset-header">Взрослые:</label>
-            <input>
+            <div class="quantity">
+              <button type="button" class="quantity-button minus">
+                <svg width="14" height="2" viewBox="0 0 14 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M0 0L0 2L14 2V0L0 0Z" fill="#756157" fill-opacity="0.3"/>
+                </svg>
+              </button>
+              <input type="number" id="adults" name="adults" value="2" class="quantity-number">
+              <button type="button" class="quantity-button plus">
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z" fill="#756157" fill-opacity="0.3"/>
+                </svg>
+              </button>
+            </div>
           </fieldset>
-          <fieldset class="modal-form-fieldset">
-            <label class="fieldset-header">Дети:</label>
-            <input>
+          <fieldset class="modal-form-fieldset children">
+            <label class="fieldset-header">Дети:
+              <button type="button" class="info-icon">
+                <span class="visually-hidden">Иконка: информация</span>
+                <span class="triangle"><span class="visually-hidden">Треугольничек рядом с сообщением.</span></span>
+                <span class="info">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет.
+                  Дети до 6 лет размещаются бесплатно.</span>
+              </button>
+            </label>
+            <div class="quantity">
+              <button type="button" class="quantity-button minus">
+                <svg width="14" height="2" viewBox="0 0 14 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M0 0L0 2L14 2V0L0 0Z" fill="#756157" fill-opacity="0.3"/>
+                </svg>
+              </button>
+              <input type="number" id="children" name="children" value="2" class="quantity-number">
+              <button type="button" class="quantity-button plus">
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z" fill="#756157" fill-opacity="0.3"/>
+                </svg>
+              </button>
+            </div>
           </fieldset>
-          <button type="submit" class="modal-form-button">Найти</button>
         </div>
+        <button type="submit" class="modal-form-button">Найти</button>
       </form>
     </dialog>
-
-    <script src="scripts/app.js" defer></script>
   </body>
 </html>

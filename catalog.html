@@ -10,18 +10,18 @@
   <body>
     <header class="header">
       <nav class="navigation">
-        <div class="nav-menu">
-          <a href="index.html" class="link logo"><img alt="Логотип." src="images/header/logo.svg" width="140" height="70"></a>
-          <span class="fake-logo"></span>
-          <a href="index.html" class="menu-link link">Главная</a>
-          <a href="index.html" class="menu-link link">О Седоне</a>
-          <a href="catalog.html" class="menu-link active-link link">Гостиницы</a>
-        </div>
-        <div class="nav-buttons">
-          <a href="#" class="search-button link"><span class="visually-hidden">Лупа.</span></a>
-          <a href="#" class="like-button link"><span class="visually-hidden">Сердечко.</span><span class="like-number">12</span></a>
-          <a href="#" class="interest-button link">Хочу сюда!</a>
-        </div>
+        <ul class="nav-menu">
+          <li><a href="index.html" class="link logo"><img alt="Логотип." src="images/header/logo.svg" width="140" height="70"></a></li>
+          <li class="fake-logo"></li>
+          <li><a href="index.html" class="menu-link link">Главная</a></li>
+          <li><a href="index.html" class="menu-link link">О Седоне</a></li>
+          <li><a href="catalog.html" class="menu-link active-link link">Гостиницы</a></li>
+        </ul>
+        <ul class="nav-buttons">
+          <li><a href="#" class="search-button link"><span class="visually-hidden">Лупа.</span></a></li>
+          <li><a href="#" class="like-button link"><span class="visually-hidden">Сердечко.</span><span class="like-number">12</span></a></li>
+          <li><a href="#" class="interest-button link">Хочу сюда!</a></li>
+        </ul>
       </nav>
     </header>
 
@@ -37,27 +37,27 @@
           <div class="hotels-form-part">
             <fieldset class="hotels-form-fieldset">
               <label class="fieldset-header">Инфраструктура:</label>
-              <span class="check-variant">
+              <p class="check-variant">
                 <input class="checkbox" type="checkbox" checked value="swimming-pool" id="swimming-pool" name="swimming-pool"><span class="fake-checkbox"></span><label class="check-variant-label" for="swimming-pool">Бассейн</label>
-              </span>
-              <span class="check-variant">
+              </p>
+              <p class="check-variant">
                 <input class="checkbox" type="checkbox" checked value="parking" id="parking" name="parking"><span class="fake-checkbox"></span><label class="check-variant-label" for="parking">Парковка</label>
-              </span>
-              <span class="check-variant">
+              </p>
+              <p class="check-variant">
                 <input class="checkbox" type="checkbox" value="wi-fi" id="wi-fi" name="wi-fi"><span class="fake-checkbox"></span><label class="check-variant-label" for="wi-fi">Wi-Fi</label>
-              </span>
+              </p>
             </fieldset>
             <fieldset class="hotels-form-fieldset">
               <label class="fieldset-header">Тип жилья:</label>
-              <span class="check-variant">
+              <p class="check-variant">
                 <input class="radio" type="radio" checked value="hotel" id="hotel" name="hotel"><span class="fake-radio"></span><label class="check-variant-label" for="hotel">Гостиница</label>
-              </span>
-              <span class="check-variant">
+              </p>
+              <p class="check-variant">
                 <input class="radio" type="radio" value="motel" id="motel" name="hotel"><span class="fake-radio"></span><label class="check-variant-label" for="motel">Мотель</label>
-              </span>
-              <span class="check-variant">
+              </p>
+              <p class="check-variant">
                 <input class="radio" type="radio" value="apartments" id="apartments" name="hotel"><span class="fake-radio"></span><label class="check-variant-label" for="apartments">Апартаменты</label>
-              </span>
+              </p>
             </fieldset>
           </div>
           <div class="hotels-form-part">
