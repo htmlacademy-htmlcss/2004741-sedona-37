@@ -880,26 +880,6 @@ body {
   background-color: #f2f2f2;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* Модальное окно */
 
 .modal {
@@ -1087,6 +1067,19 @@ body {
   position: relative;
 }
 
+.info-icon .triangle {
+  display: none;
+  position: absolute;
+  top: 32px;
+  left: 3px;
+  width: 19px;
+  height: 9px;
+  background-image: url("../images/modal/triangle.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 19px 9px;
+}
+
 .info-icon .info {
   display: none;
   position: absolute;
@@ -1120,35 +1113,6 @@ body {
   width: 100%;
   padding: 18px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* Декоративные изменения */
 
@@ -1469,8 +1433,11 @@ body {
 }
 
 .info-icon:hover .info,
+.info-icon:hover .triangle,
 .info-icon:active .info,
-.info-icon:focus-visible .info {
+.info-icon:active .triangle,
+.info-icon:focus-visible .info,
+.info-icon:focus-visible .triangle {
   display: block;
 }
 
@@ -1483,4 +1450,5 @@ body {
 .modal-form .calender:active,
 .modal-form .calender:focus-visible {
   outline:  none;
+  opacity: 0.6;
 }
