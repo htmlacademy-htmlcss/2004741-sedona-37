@@ -587,10 +587,12 @@ body {
 
 .hotels-form .cost-input.from {
   border-radius: 4px 0 0 4px;
+  padding-right: 47px;
 }
 
 .hotels-form .cost-input.to {
   border-radius: 0 4px 4px 0;
+  padding-right: 50px;
 }
 
 .hotels-form .from-to {
@@ -882,7 +884,21 @@ body {
 
 /* Модальное окно */
 
+.modal-container {
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(242, 242, 242, 0.8);
+}
+
 .modal {
+  position: relative;
+  margin: auto;
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
+  background-color: #ffffff;
   border: none;
   border-radius: 30px;
   padding: 64px 70px;
@@ -943,6 +959,7 @@ body {
   width: 440px;
   margin: 0;
   padding: 12px 20px;
+  padding-right: 48px;
   box-sizing: border-box;
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 18px;
@@ -1392,6 +1409,7 @@ body {
 }
 
 .modal .close-modal:focus-visible {
+  background-color: #e6e6e6;
   outline: 3px solid #83b3d3;
 }
 
