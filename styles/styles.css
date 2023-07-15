@@ -1138,7 +1138,7 @@ body {
 .footer .tel:hover,
 .footer .tel:focus,
 .nav-menu .menu-link:not(.active-link):hover,
-.nav-menu .menu-link:not(.active-link):focus {
+.nav-menu .menu-link:focus-visible {
   color: #756157;
   outline: none;
   text-decoration: none;
@@ -1146,6 +1146,7 @@ body {
 
 .nav-menu .menu-link.active-link:focus {
   border-bottom: 2px solid #756257;
+  outline: none;
 }
 
 .footer .tel:active,
@@ -1242,6 +1243,11 @@ body {
   background-color: #e5e5e5;
 }
 
+.list-item.active-item .link:focus-visible {
+  outline: none;
+  opacity: 0.6;
+}
+
 /* иконки */
 
 .nav-buttons .search-button:hover,
@@ -1309,14 +1315,17 @@ body {
 }
 
 .hotels-form .range-button:hover {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
   outline: none;
 }
 
 .hotels-form .range-button:active {
+  box-shadow: 0 7px 15px rgba(0, 0, 0, 0.4);
   outline: 2px solid #83b3d3;
 }
 
 .hotels-form .range-button:focus-visible {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
   outline: 3px solid #83b3d3;
 }
 
@@ -1376,7 +1385,7 @@ body {
 /* картинки */
 
 .logo:not(.active):hover,
-.logo:not(.active):focus-visible {
+.logo:focus-visible {
   opacity: 0.6;
   outline: none;
   cursor: pointer;
