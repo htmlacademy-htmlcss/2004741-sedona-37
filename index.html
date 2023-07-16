@@ -18,7 +18,7 @@
           <li><a href="catalog.html" class="menu-link link">Гостиницы</a></li>
         </ul>
         <ul class="nav-buttons">
-          <li><a href="#" class="search-button link"><span class="visually-hidden">Лупа.</span></a></li>
+          <li><a href="#" class="search-button link"><span class="visually-hidden">Кнопка-лупа для поиска.</span></a></li>
           <li><a href="#" class="like-button link"><span class="visually-hidden">Сердечко.</span><span class="like-number">12</span></a></li>
           <li><a href="#" class="interest-button link">Хочу сюда!</a></li>
         </ul>
@@ -27,6 +27,7 @@
 
     <main class="main">
       <section class="banner">
+        <span  class="visually-hidden">Фоновое фото: каньон, пасмурное небо, скалы, сосны.</span>
         <h1 class="visually-hidden">Седона ждёт Вас!</h1>
         <img class="welcome" alt="WELCOME to the gorgeous SEDONA Because the Grand Canyon sucks!" src="images/header/welcome.png" width="458" height="352">
         <img class="decor" alt="Декоративный элемент белого цвета." src="images/header/divider.png" width="1200" height="57">
@@ -101,11 +102,14 @@
       </section>
 
       <section class="mail">
+        <span  class="visually-hidden">Фоновое фото: размытое фото долины и скал.</span>
         <h2 class="header-2">Подпишитесь на рассылку</h2>
         <p class="post-header">Только полезная информация и никакого спама, честное&nbsp;бойскаутское!</p>
         <form class="email-form" action="index.html" method="post">
+          <label for="mail" class="visually-hidden">Поле ввода email</label>
           <input class="email-input" type="email" id="mail" name="mail" placeholder="Ваш e-mail">
-          <button type="submit" class="email-button">Подписаться</button>
+          <label for="mail-submit" class="visually-hidden">Отправка email</label>
+          <button type="submit" class="email-button" id="mail-submit">Подписаться</button>
         </form>
       </section>
     </main>
@@ -193,28 +197,33 @@
         </div>
         <form class="modal-form" action="index.html" method="post">
           <fieldset class="modal-form-fieldset">
-            <label class="fieldset-header">Дата заезда:</label>
+            <label class="fieldset-header" for="date-in">Дата заезда:</label>
             <input type="text" id="date-in" name="date-in" value="27 апреля 2020" class="date-input">
-            <button type="button" class="calender"></button>
+            <label class="visually-hidden" for="calender-in">Кнопка-календарь</label>
+            <button type="button" class="calender" id="calender-in"></button>
             <span class="date-comment error">Мы не можем отправить вас в прошлое.</span>
           </fieldset>
           <fieldset class="modal-form-fieldset">
-            <label class="fieldset-header">Дата выезда:</label>
+            <label class="fieldset-header" for="date-out">Дата выезда:</label>
             <input type="text" id="date-out" name="date-out" value="1 сентября 2023" class="date-input">
-            <button type="button" class="calender"></button>
+            <label class="visually-hidden" for="calender-out">Кнопка-календарь</label>
+            <button type="button" class="calender" id="calender-out"></button>
             <span class="date-comment">На эти даты есть свободные номера. Пока есть.</span>
           </fieldset>
           <div class="adults-children">
             <fieldset class="modal-form-fieldset adults">
               <label class="fieldset-header">Взрослые:</label>
               <div class="quantity">
-                <button type="button" class="quantity-button minus">
+                <label for="minus-adult" class="visually-hidden">Уменьшить количество взрослых</label>
+                <button type="button" class="quantity-button minus" id="minus-adult">
                   <svg width="14" height="2" viewBox="0 0 14 2" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M0 0L0 2L14 2V0L0 0Z" fill="#756157" fill-opacity="0.3"/>
                   </svg>
                 </button>
+                <label for="adults" class="visually-hidden">Количество взрослых</label>
                 <input type="number" id="adults" name="adults" value="2" class="quantity-number">
-                <button type="button" class="quantity-button plus">
+                <label for="plus-adult" class="visually-hidden">Увеличить количество взрослых</label>
+                <button type="button" class="quantity-button plus" id="plus-adult">
                   <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z" fill="#756157" fill-opacity="0.3"/>
                   </svg>
@@ -222,8 +231,8 @@
               </div>
             </fieldset>
             <fieldset class="modal-form-fieldset children">
-              <label class="fieldset-header">Дети:
-                <button type="button" class="info-icon">
+              <label class="fieldset-header" for="info">Дети:
+                <button type="button" class="info-icon" id="info">
                   <span class="visually-hidden">Иконка: информация</span>
                   <span class="triangle"><span class="visually-hidden">Треугольничек рядом с сообщением.</span></span>
                   <span class="info">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет.
@@ -231,13 +240,16 @@
                 </button>
               </label>
               <div class="quantity">
-                <button type="button" class="quantity-button minus">
+                <label for="minus-child" class="visually-hidden">Уменьшить количество детей</label>
+                <button type="button" class="quantity-button minus" id="minus-child">
                   <svg width="14" height="2" viewBox="0 0 14 2" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M0 0L0 2L14 2V0L0 0Z" fill="#756157" fill-opacity="0.3"/>
                   </svg>
                 </button>
+                <label for="children" class="visually-hidden">Количество детей</label>
                 <input type="number" id="children" name="children" value="2" class="quantity-number">
-                <button type="button" class="quantity-button plus">
+                <label for="plus-child" class="visually-hidden">Увеличить количество детей</label>
+                <button type="button" class="quantity-button plus" id="plus-child">
                   <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z" fill="#756157" fill-opacity="0.3"/>
                   </svg>
@@ -245,7 +257,8 @@
               </div>
             </fieldset>
           </div>
-          <button type="submit" class="modal-form-button">Найти</button>
+          <label for="submit" class="visually-hidden">Найти гостиницу</label>
+          <button type="submit" class="modal-form-button" id="submit">Найти</button>
         </form>
       </div>
     </div>

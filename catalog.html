@@ -18,7 +18,7 @@
           <li><a href="catalog.html" class="menu-link active-link link">Гостиницы</a></li>
         </ul>
         <ul class="nav-buttons">
-          <li><a href="#" class="search-button link"><span class="visually-hidden">Лупа.</span></a></li>
+          <li><a href="#" class="search-button link"><span class="visually-hidden">Кнопка-лупа для поиска.</span></a></li>
           <li><a href="#" class="like-button link"><span class="visually-hidden">Сердечко.</span><span class="like-number">12</span></a></li>
           <li><a href="#" class="interest-button link">Хочу сюда!</a></li>
         </ul>
@@ -27,10 +27,11 @@
 
     <main class="main">
       <section class="form">
+        <span class="visually-hidden">Фоновое фото: очень размытое фото скал.</span>
         <h1 class="header-1">Гостиницы Седоны</h1>
         <div class="form-navigation">
           <a class="form-navigation-item link" href="index.html"><img alt="Домик." src="images/catalog/home.png" width="12" height="12"></a>
-          <span class="form-navigation-item"><img src="images/catalog/breadcrumbs.png" alt="&#62" width="8" height="21"></span>
+          <span class="form-navigation-item"><img src="images/catalog/breadcrumbs.png" alt="Стрелочка вправо." width="8" height="21"></span>
           <a class="form-navigation-item link" href="catalog.html">Гостиницы</a>
         </div>
         <form class="hotels-form" action="catalog.html" method="post">
@@ -38,10 +39,10 @@
             <fieldset class="hotels-form-fieldset">
               <label class="fieldset-header">Инфраструктура:</label>
               <p class="check-variant">
-                <input class="checkbox" type="checkbox" checked value="swimming-pool" id="swimming-pool" name="swimming-pool"><span class="fake-checkbox"></span><label class="check-variant-label" for="swimming-pool">Бассейн</label>
+                <input class="checkbox" type="checkbox" checked value="swimming-pool" id="swimming-pool" name="swimming-pool"><span class="fake-checkbox"><span class="visually-hidden">Чекбокс отмечен галочкой.</span></span><label class="check-variant-label" for="swimming-pool">Бассейн</label>
               </p>
               <p class="check-variant">
-                <input class="checkbox" type="checkbox" checked value="parking" id="parking" name="parking"><span class="fake-checkbox"></span><label class="check-variant-label" for="parking">Парковка</label>
+                <input class="checkbox" type="checkbox" checked value="parking" id="parking" name="parking"><span class="fake-checkbox"><span class="visually-hidden">Чекбокс отмечен галочкой.</span></span><label class="check-variant-label" for="parking">Парковка</label>
               </p>
               <p class="check-variant">
                 <input class="checkbox" type="checkbox" value="wi-fi" id="wi-fi" name="wi-fi"><span class="fake-checkbox"></span><label class="check-variant-label" for="wi-fi">Wi-Fi</label>
@@ -50,7 +51,7 @@
             <fieldset class="hotels-form-fieldset">
               <label class="fieldset-header">Тип жилья:</label>
               <p class="check-variant">
-                <input class="radio" type="radio" checked value="hotel" id="hotel" name="hotel"><span class="fake-radio"></span><label class="check-variant-label" for="hotel">Гостиница</label>
+                <input class="radio" type="radio" checked value="hotel" id="hotel" name="hotel"><span class="fake-radio"><span class="visually-hidden">Радио-кнопка отмечена синим кружочком.</span></span><label class="check-variant-label" for="hotel">Гостиница</label>
               </p>
               <p class="check-variant">
                 <input class="radio" type="radio" value="motel" id="motel" name="hotel"><span class="fake-radio"></span><label class="check-variant-label" for="motel">Мотель</label>
@@ -64,19 +65,25 @@
             <fieldset class="hotels-form-fieldset">
               <label class="fieldset-header">Стоимость, ₽:</label>
               <span class="cost">
+                <label for="from" class="visually-hidden">Поле ввода минимальной стоимости</label>
                 <input class="cost-input from" value="0" type="number" id="from" name="from">
                 <span class="from-to from">от</span>
+                <label for="to" class="visually-hidden">Поле ввода максимальной стоимости</label>
                 <input class="cost-input to" value="9000" type="number" id="to" name="to">
                 <span class="from-to to">до</span>
               </span>
               <span class="range-bar">
-                <button type="button" class="range-button min"></button>
-                <button type="button" class="range-button max"></button>
+                <label for="min" class="visually-hidden">Кнопка минимальной стоимости</label>
+                <button type="button" class="range-button min" id="min"></button>
+                <label for="max" class="visually-hidden">Кнопка максимальной стоимости</label>
+                <button type="button" class="range-button max" id="max"></button>
               </span>
             </fieldset>
             <fieldset class="hotels-form-fieldset">
-              <button class="hotels-form-button submit" type="submit">Применить</button>
-              <button class="hotels-form-button reset" type="reset">Сбросить</button>
+              <label for="submit" class="visually-hidden">Кнопка отправки формы</label>
+              <button class="hotels-form-button submit" type="submit" id="submit">Применить</button>
+              <label for="reset" class="visually-hidden">Кнопка сбрасывания введённых данных формы</label>
+              <button class="hotels-form-button reset" type="reset" id="reset">Сбросить</button>
             </fieldset>
           </div>
         </form>
@@ -88,6 +95,7 @@
           <select id="catalog" name="catalog" class="select">
             <option value="first-cheap">Сначала дешевые</option>
           </select>
+          <span class="visually-hidden">Стрелочка вниз, чтобы открыть выпадающий список.</span>
           <div>
             <button class="catalog-form-button active" type="button"><span class="visually-hidden">Расположение карточек таблицей.</span></button>
             <button class="catalog-form-button" type="button"><span class="visually-hidden">Расположение карточек по одной.</span></button>
@@ -96,7 +104,7 @@
         </div>
         <div class="catalog">
           <div class="card">
-            <a class="link image-link" href="#"><img src="images/catalog/hotel-1.jpg" alt="Фото: пещера, из которой виден океан и звёздное небо." width="300" height="212"></a>
+            <a class="link image-link" href="#"><img src="images/catalog/hotel-1.jpg" alt="Фото: скалистая пещера, из которой виден океан и звёздное небо." width="300" height="212"></a>
             <h3 class="header-3">Amara Resort & Spa</h3>
             <div class="hotel-cost">
               <p class="cost-item">Гостиница</p>
@@ -169,8 +177,10 @@
         <h2 class="header-2">Подпишитесь на рассылку</h2>
         <p class="post-header">Только полезная информация и никакого спама, честное&nbsp;бойскаутское!</p>
         <form class="email-form" action="catalog.html" method="post">
+          <label for="mail" class="visually-hidden">Поле ввода email</label>
           <input class="email-input" type="email" id="mail" name="mail" placeholder="Ваш e-mail">
-          <button type="submit" class="email-button">Подписаться</button>
+          <label for="mail-submit" class="visually-hidden">Отправка email</label>
+          <button type="submit" class="email-button" id="mail-submit">Подписаться</button>
         </form>
       </section>
     </main>
