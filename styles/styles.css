@@ -974,6 +974,10 @@ body {
 
 /* Модальное окно */
 
+.modal-flex {
+  display: flex;
+}
+
 .modal-container {
   display: none;
   position: fixed;
