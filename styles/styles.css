@@ -98,19 +98,27 @@ body {
 }
 
 .mail, .catalog-mail {
-  padding: 70px 258px 104px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .mail .header-2,
 .catalog-mail .header-2 {
+  margin-top: 96px;
   margin-bottom: 20px;
+}
+
+.mail .email-form,
+.catalog-mail .email-form {
+  margin-bottom: 104px;
 }
 
 .interest .post-header,
 .mail .post-header,
 .catalog-mail .post-header {
   margin-bottom: 54px;
-  margin-top: 20px;
+  margin-top: 0;
 }
 
 .email-form {
@@ -147,13 +155,12 @@ body {
 /* header */
 
 .header {
-  padding: 0 70px;
   min-height: 64px;
 }
 
 .header .navigation {
   padding: 0;
-  margin: 0;
+  margin: 0 70px;
   display: flex;
   justify-content: space-between;
 }
@@ -272,17 +279,23 @@ body {
 }
 
 .about .head-div {
-  padding: 44px 200px 68px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about .header-2 {
+  margin-top: 69px;
+}
+
+.about .post-header {
+  margin-top: 0;
+  margin-bottom: 69px;
 }
 
 .about-blocks {
   display: flex;
   flex-wrap: wrap;
-}
-
-.about-blocks .off-list {
-  background-color: #82b3d3;
-  padding: 102px 85px;
 }
 
 .about-list {
@@ -292,30 +305,23 @@ body {
   flex-wrap: wrap;
 }
 
-.about-list .about-item:nth-child(odd) {
-  background-color: #f0f6fa;
-  padding: 113px 85px 112px;
-}
-
-.about-list .about-item:nth-child(even) {
-  background-color: #e6f0f6;
-  padding: 113px 85px 112px;
-}
-
-.off-list .header-3,
-.off-list .paragraph {
-  color: #ffffff;
-}
-
 .about-item, .off-list {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 230px;
+  width: 400px;
 }
 
-.about-blocks .image-element {
-  max-height: 385px;
+.about-blocks .off-list {
+  background-color: #82b3d3;
+}
+
+.about-list .about-item:nth-child(odd) {
+  background-color: #f0f6fa;
+}
+
+.about-list .about-item:nth-child(even) {
+  background-color: #e6f0f6;
 }
 
 .about-blocks .header-3 {
@@ -330,12 +336,45 @@ body {
   margin-top: 30px;
 }
 
+.off-list .header-3,
+.off-list .paragraph {
+  color: #ffffff;
+}
+
+.off-list .header-3 {
+  margin-top: 102px;
+}
+
+.off-list .paragraph {
+  margin-bottom: 102px;
+}
+
+.about-item .header-3 {
+  margin-top: 112px;
+}
+
+.about-item .paragraph {
+  margin-bottom: 112px;
+}
+
+.about-blocks .image-element {
+  max-height: 385px;
+}
+
 .comfort .head-div {
-  padding: 39px 200px 42px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .comfort .header-2 {
+  margin-top: 64px;
   margin-bottom: 20px;
+}
+
+.comfort .post-header {
+  margin-top: 0;
+  margin-bottom: 64px;
 }
 
 .comfort-blocks {
@@ -353,17 +392,21 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 183px 85px 81px 85px;
   width: 400px;
-  box-sizing: border-box;
 }
 
-.comfort-item .header-3, .comfort-item .paragraph {
+.comfort-item .header-3,
+.comfort-item .paragraph {
   margin: 0;
 }
 
 .comfort-item .header-3 {
+  margin-top: 183px;
   margin-bottom: 30px;
+}
+
+.comfort-item .paragraph {
+  margin-bottom: 81px;
 }
 
 .comfort-blocks .comfort-item:nth-child(1) {
@@ -388,11 +431,13 @@ body {
 }
 
 .interest {
-  padding: 96px 258px;
-  padding-top: 71px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .interest .header-2 {
+  margin-top: 96px;
   margin-bottom: 20px;
 }
 
@@ -400,7 +445,8 @@ body {
   font-size: 20px;
   line-height: 36px;
   padding: 8px 50px;
-  margin: 0 auto;
+  margin: 0;
+  margin-bottom: 96px;
   box-sizing: border-box;
   display: inline-block;
 }
@@ -413,7 +459,8 @@ body {
   background-color: #82b3d3;
 }
 
-.mail .header-2, .mail .post-header {
+.mail .header-2,
+.mail .post-header {
   color: #ffffff;
 }
 
@@ -422,7 +469,6 @@ body {
 .footer {
   display: flex;
   justify-content: space-between;
-  padding: 45px 70px 30px 70px;
 }
 
 .footer .social-networks {
@@ -430,6 +476,7 @@ body {
   justify-content: space-between;
   width: 142px;
   flex-wrap: wrap;
+  margin: 45px 0 30px 70px;
 }
 
 .social-networks .link {
@@ -456,6 +503,7 @@ body {
   max-width: 400px;
   flex-wrap: wrap;
   gap: 10px;
+  margin: 45px 0 30px;
 }
 
 .footer .tel {
@@ -466,6 +514,7 @@ body {
 
 .footer .html-logo {
   width: 115px;
+  margin: 45px 70px 30px 0;
 }
 
 .html-logo svg {
@@ -497,7 +546,6 @@ body {
   display: flex;
   align-items: center;
   margin-bottom: 40px;
-  height: 21px;
 }
 
 .form .form-navigation-item {
