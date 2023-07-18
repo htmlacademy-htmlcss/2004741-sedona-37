@@ -10,7 +10,7 @@
     <base href="https://htmlacademy-htmlcss.github.io/2004741-sedona-37/9/">
 </head>
   <body>
-    <header class="header">
+    <header class="header" data-test="header">
       <nav class="navigation">
         <ul class="nav-menu">
           <li><a href="index.html" class="link logo active"><img alt="Логотип." src="images/header/logo.svg" width="140" height="70"></a></li>
@@ -27,95 +27,7 @@
       </nav>
     </header>
 
-    <main class="main">
-      <section class="banner">
-        <h1 class="visually-hidden">Седона ждёт Вас!</h1>
-        <img class="welcome" alt="WELCOME to the gorgeous SEDONA Because the Grand Canyon sucks!" src="images/header/welcome.png" width="458" height="352">
-        <img class="decor" alt="Декоративный элемент белого цвета." src="images/header/divider.png" width="1200" height="57">
-      </section>
-
-      <section class="about" id="about">
-        <div class="head-div">
-          <h2 class="header-2">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
-          <p class="post-header">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
-        </div>
-        <div class="about-blocks">
-          <div class="off-list">
-            <h3 class="header-3">Настоящий городок</h3>
-            <img alt="Горизонтальная полоска." src="images/main/rectangle-white.png" width="60" height="2">
-            <p class="paragraph">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
-          </div>
-          <img class="image-element" alt="Фото: гостиница, магазины, ларьки и деревья на фоне скал." src="images/main/photo-1.jpg" width="800" height="385">
-          <ul class="about-list">
-            <li class="about-item">
-              <h3 class="header-3">Небольшая площадь</h3>
-              <img alt="Горизонтальная полоска." src="images/main/rectangle-black.png" width="60" height="2">
-              <p class="paragraph">Все достопримечательности находятся очень близко</p>
-            </li>
-            <li class="about-item">
-              <h3 class="header-3">Красивая дорога</h3>
-              <img alt="Горизонтальная полоска." src="images/main/rectangle-black.png" width="60" height="2">
-              <p class="paragraph">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
-            </li>
-            <li class="about-item">
-              <h3 class="header-3">Мало туристов</h3>
-              <img alt="Горизонтальная полоска." src="images/main/rectangle-black.png" width="60" height="2">
-              <p class="paragraph">Большинство едет в Гранд Каньон и толпится там</p>
-            </li>
-          </ul>
-          <img class="image-element" alt="Фото: скалистый мост в каньоне, под которым растут деревья." src="images/main/photo-2.jpg" width="800" height="385">
-          <div class="off-list">
-            <h3 class="header-3">Там есть мост&nbsp;дьявола</h3>
-            <img alt="Горизонтальная полоска." src="images/main/rectangle-white.png" width="60" height="2">
-            <p class="paragraph">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
-          </div>
-        </div>
-      </section>
-
-      <section class="comfort">
-        <div class="head-div">
-          <h2 class="header-2">Приезжайте в Седону отдохнуть в&nbsp;комфорте&nbsp;и&nbsp;уюте!</h2>
-          <p class="post-header">Опытный персонал и качественное обслуживание!</p>
-        </div>
-        <ul class="comfort-blocks">
-          <li class="comfort-item">
-            <span class="visually-hidden">Домик.</span>
-            <h3 class="header-3">Жильё</h3>
-            <p class="paragraph">Рекомендуем пожить в&nbsp;настоящем мотеле, всё&nbsp;как&nbsp;в&nbsp;кино!</p>
-          </li>
-          <li class="comfort-item">
-            <span class="visually-hidden">Бургер.</span>
-            <h3 class="header-3">Еда</h3>
-            <p class="paragraph">Всегда заказывайте топовый&nbsp;фирменный бургер, вы&nbsp;не&nbsp;разочаруетесь!</p>
-          </li>
-          <li class="comfort-item">
-            <span class="visually-hidden">Подарок.</span>
-            <h3 class="header-3">Сувениры</h3>
-            <p class="paragraph">Не только китайского, но&nbsp;и&nbsp;настоящего местного производства!</p>
-          </li>
-        </ul>
-      </section>
-
-      <section class="interest">
-        <h2 class="header-2">Заинтересовались?</h2>
-        <p class="post-header">Укажите предполагаемые даты поездки, <br>и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-        <a href="#" class="interest-button link">Поиск гостиницы в Седоне</a>
-      </section>
-
-      <section class="mail">
-        <span  class="visually-hidden">Фоновое фото: размытое фото долины и скал.</span>
-        <h2 class="header-2">Подпишитесь на рассылку</h2>
-        <p class="post-header">Только полезная информация и никакого спама, честное&nbsp;бойскаутское!</p>
-        <form class="email-form" action="index.html" method="post">
-          <label for="mail" class="visually-hidden">Поле ввода email</label>
-          <input class="email-input" type="email" id="mail" name="mail" placeholder="Ваш e-mail">
-          <label for="mail-submit" class="visually-hidden">Отправка email</label>
-          <button type="submit" class="email-button" id="mail-submit">Подписаться</button>
-        </form>
-      </section>
-    </main>
-
-    <footer class="footer">
+    <footer class="footer" data-test="footer">
       <div class="social-networks">
         <a href="https://vk.com/htmlacademy" class="link vk-logo">
           <svg width="24" height="14" viewBox="0 0 24 14" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -190,8 +102,8 @@
       </a>
     </footer>
 
-    <div class="modal-container">
-      <div class="modal">
+    <div class="modal-container modal-flex">
+      <div class="modal" data-test="modal">
         <div class="modal-header">
           <h2 class="header-2">Поиск гостиницы в Седоне</h2>
           <button class="close-modal"><span class="visually-hidden">Кнопка-крестик для закрытия модального окна.</span></button>
