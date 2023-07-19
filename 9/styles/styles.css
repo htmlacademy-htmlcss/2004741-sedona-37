@@ -290,7 +290,7 @@ body {
 
 .about .post-header {
   margin-top: 0;
-  margin-bottom: 69px;
+  margin-bottom: 90px;
 }
 
 .about-blocks {
@@ -545,7 +545,7 @@ body {
 .form .form-navigation {
   display: flex;
   align-items: center;
-  margin-bottom: 40px;
+  margin-bottom: 35px;
 }
 
 .form .form-navigation-item {
@@ -818,7 +818,7 @@ body {
 .catalog .card {
   width: 340px;
   box-sizing: border-box;
-  padding: 20px;
+  padding: 18px 20px;
   display: flex;
   flex-direction: column;
   border: 1px solid #e6e6e6;
