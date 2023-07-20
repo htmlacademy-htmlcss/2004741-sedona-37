@@ -25,7 +25,6 @@
         </ul>
       </nav>
     </header>
-
     <footer class="footer" data-test="footer">
       <div class="social-networks">
         <a href="https://vk.com/htmlacademy" class="link vk-logo">
@@ -100,12 +99,11 @@
         <span class="visually-hidden">Логотип HTML Академии.</span>
       </a>
     </footer>
-
     <div class="modal-container modal-flex">
       <div class="modal" data-test="modal">
         <div class="modal-header">
           <h2 class="header-2">Поиск гостиницы в Седоне</h2>
-          <button class="close-modal"><span class="visually-hidden">Кнопка-крестик для закрытия модального окна.</span></button>
+          <button class="close-modal" type="button"><span class="visually-hidden">Кнопка-крестик для закрытия модального окна.</span></button>
         </div>
         <form class="modal-form" action="index.html" method="post">
           <fieldset class="modal-form-fieldset">
@@ -124,7 +122,7 @@
           </fieldset>
           <div class="adults-children">
             <fieldset class="modal-form-fieldset adults">
-              <label class="fieldset-header">Взрослые:</label>
+              <label class="fieldset-header" for="adults">Взрослые:</label>
               <div class="quantity">
                 <label for="minus-adult" class="visually-hidden">Уменьшить количество взрослых</label>
                 <button type="button" class="quantity-button minus" id="minus-adult">
@@ -145,7 +143,7 @@
               </div>
             </fieldset>
             <fieldset class="modal-form-fieldset children">
-              <label class="fieldset-header" for="info">Дети:
+              <label class="fieldset-header" for="children">Дети:
                 <button type="button" class="info-icon" id="info">
                   <span class="visually-hidden">Иконка: информация</span>
                   <span class="triangle"><span class="visually-hidden">Треугольничек рядом с сообщением.</span></span>

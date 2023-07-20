@@ -360,6 +360,11 @@ body {
 
 .about-blocks .image-element {
   max-height: 385px;
+  width: 800px;
+}
+
+.image-element img {
+  max-width: 100%;
 }
 
 .comfort .head-div {
@@ -837,6 +842,7 @@ body {
 
 .image-link img {
   margin: 0;
+  max-width: 100%;
 }
 
 .card .header-3 {
